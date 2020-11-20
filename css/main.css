@@ -1,0 +1,373 @@
+/* Header */
+a{
+    color:#337ab7;
+    text-decoration: none;
+}
+.header{
+    border: 1px solid #e4e4e4;
+    background-color: white;
+    position: relative;
+    z-index: 100;
+}
+.header-navbar{
+    width:100%;
+    display: flex;
+    position: relative;
+    margin:0;
+    padding:0 0;
+    list-style: none;
+    align-items: center;
+}
+.header-item{
+    position: relative;
+    height:58px;
+    
+}
+.header-dropdown{
+    display: none;
+}
+.header-img-logo{
+    height:27px;
+}
+.header-item:first-child .header-link{
+    padding: 12px 15px 12px 0;
+}
+.header-item:last-child .header-link{
+    padding: 7px 0;
+}
+.header-item:last-child{
+    position: absolute;
+    padding-right: 0;
+    right:0;
+}
+.header-link{
+    display: block;
+    padding:19px 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color:#333;
+    text-decoration:none;
+}
+.header-item.active{
+    border-bottom:2px solid #0E528B;
+}
+/* Header dropdown */
+.item-hover:hover .header-dropdown{
+    display: block;
+}
+.header-dropdown{
+    position: absolute;
+    top:calc(100%-2px);
+    width:200px;
+    padding:0;
+    z-index: 9999;
+    list-style: none;
+    background-color: white;
+    border:1px solid rgba(0,0,0,0.3);
+    border-top:2px solid #0E528B; 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+}
+.header-dropdown::before{
+    content:""; 
+    width:15px;
+    height:15px;
+    border:2px solid;
+    position: absolute;
+    top:-10px;
+    left:20%;
+    transform: rotate(45deg);
+    background-color: white;
+    border-color:#0E528B transparent transparent #0E528B ;
+}
+.dropdown-link:hover{
+    color:white;
+    border-bottom: solid 1px #b47744;
+    background-color: #e29454;
+    filter: none !important;
+}
+.dropdown-link:hover.header-dropdown::before{
+    background-color:#E0985D ;
+}
+.dropdown-link{
+    display: block;
+    font-size: 1.6rem;
+    color: #687074;
+    text-decoration: none;
+    padding:15px 15px;
+    border-bottom:1px solid #eee;
+}
+/*----*/
+.header-img-agency{
+    height:38px;
+}
+
+/* Content */
+.content{
+    width:100%;
+}
+.main-product{
+    width:100%;
+}
+.product{
+    width:970px;
+    margin:auto;
+    padding-top:50px;
+}
+.product-option{
+    border-bottom:1px solid #333;
+}
+.product-type{
+    display: flex;
+    height:70px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color:#337ab7;
+    font-weight: bold;
+    align-items: center;
+}
+.product-type.active{
+    color:#df6a0e;
+}
+.product-img{
+    margin-right:15px;
+}
+
+.product-list{
+
+}
+.product-item{
+    width:100%;
+    display: block;
+    padding-top: 25px;
+    text-decoration: none;
+}
+.product-image{
+    width:100%;
+    transition: 1s;
+}
+.product-image:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.product-name{
+    text-align: center;
+    font-size: 1.6rem;
+    color:#333;
+    margin-top:-10px;
+    font-weight: bold;
+}
+.social-link{
+    left:12px;
+    top:35%;
+    position: fixed;
+    width:50px;
+
+    height:100px;
+    border-radius:20px;
+    background-color:white;
+}
+.social-icon{
+    padding:5px;
+    transition: 0.4s;
+    width:50px;
+    height:50px;
+}
+.social-icon:hover{
+    transform: scale(1.5);
+    transition: 0.4s;
+}
+.sevice-option{
+    position: fixed;
+    right:0;
+    top:38%;
+} 
+.sevice-item{
+
+}
+.sevice-link{
+    display: block;
+    padding:10px 20px;
+    font-size: 1.5rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color:white;
+    background-color: #ff4d4d;
+    text-decoration:none;
+}
+.sevice-link:first-child{
+    margin-bottom:10px;
+}
+.phone{
+    position: fixed;
+    background-color: #D60202;
+    display: flex;
+    height:50px;
+    align-items: center;
+    width:230px;
+    bottom:30px;
+    left:15px;
+    border-radius: 25px;
+    padding-left: 5px;
+    border:1px solid white;
+}
+
+.phone-img{
+    width:35px;
+    height:35px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border:1px solid white;
+}
+.phone-number{
+    color:white;
+    font-size: 2.5rem;
+    margin:0 ;
+}
+.top-page{
+    position: fixed;
+    right:15px;
+    top:76%;
+    display: none;
+}
+.move-icon{
+    width:70px;
+    height:70px;
+    transition: 1s;;
+}
+.box-chat{
+    position: fixed;
+    right: 0;
+    bottom:0;
+    color:white;
+    border-radius: 3px;
+    background-color:rgb(80,178,229) ;
+    height:30px;
+    display:flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+.box-chat img{
+    margin:0 15px;
+}
+.box-chat span{
+    margin-right: 15px;
+}
+.box-chat:hover{
+    cursor: pointer;
+}
+/*----*/
+
+/* Email user */
+.email-user{
+    text-align: center;
+    margin:0 auto;
+    padding:30px 0;
+    background-image: url(http://webdemo.netdeal.vn:12071/Images/bg-regis.jpg);
+}
+.email-title{
+    font-size: 1.8rem;
+    margin-right: 20px;
+    margin-left: -40px;
+}
+.email-box{
+    position: relative;
+    font-size: 1.5rem;
+}
+.email-input{
+    width:42%;
+    height:35px;
+    
+    padding-left: 10px;
+    outline: none;
+    margin-right: 10px;
+}
+.email-btn{
+    height:35px;
+    width:50px;
+    color:white;
+    border:none;
+    outline:none;
+    position: absolute;
+    background-color: #034A84;
+}
+/*---*/
+/*End content*/
+
+/* Footer */
+
+.footer{
+    background-color: #272D3A;
+    color:white;
+    font-size: 1.5rem;
+}
+.footer-top{
+    padding:45px 0;
+}
+.footer-logo{
+    width:100%;
+}
+.footer-heading{
+    font-size: 1.8rem;
+    margin-top:10px;
+    padding-bottom:15px;
+    text-transform: uppercase;
+    border-bottom:1px solid white;
+}
+.footer-description{
+    text-align: justify;
+}
+.news-list{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.news-item{
+    margin-bottom:15px;
+}
+.news-link{
+    display: flex;
+    text-decoration: none;
+    color:white;
+}
+.news-img{
+    width:30%;
+    margin-right: 15px;
+}
+.news-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.news-title{
+    margin:0;
+}
+.news-date{
+
+}
+.footer-info{
+    display: flex;
+    margin-left:20px;
+}
+.footer-mark,.footer-contact{
+    width:10%;
+    height:30px;
+    margin-right:20px;
+}
+.footer-contact{
+    margin-top:-5px;
+}
+.footer-item{
+    margin-top:30px;
+}
+.footer-bottom{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border-top:1px solid white;
+    text-align: center;
+    padding:15px 0;
+}
+.fb-page{
+    width:100%;
+    height:200px;
+}

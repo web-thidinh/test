@@ -1,0 +1,195 @@
+body{
+    background-image: url(/images/product-detail/grand_i10_bg.jpg);
+    background-repeat: no-repeat;
+}
+.main-content{
+
+}
+.content-bg{
+    width:100%;
+    height:500px;
+    position: absolute;
+}
+.content-bg img{
+    position: absolute;
+    top:0;
+    left:-285px;
+
+}
+.product-detail{
+    width:100%;
+    margin-top:75px;
+    position: relative;
+ 
+}
+.product-show{
+    
+}
+.name{
+    font-size: 2.8rem;
+    margin:0;
+    color:#333;
+}
+.product-description{
+    padding-top:60px;
+}
+.product-slogan{
+    margin-top:15px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color:#333;
+}
+.text{
+    margin-top:20px;
+    font-size: 1.5rem;
+    color:#333;
+    line-height: 2rem;
+}
+.price{
+    margin-top:30px;
+}
+.price a{
+    background-color: #3c599b;
+    padding:8px 20px;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+.price a:hover{
+    background-color:#D56A10;
+}
+.product-detail-image img{
+    width:100%;
+}
+.fix-detail{
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    padding-left:15px;
+    padding-right: 15px;
+    background-color: white;
+    box-shadow: 0 0 6px #ccc;
+}
+
+.product-detail-bottom{
+    width:970px;
+}
+.product-view{
+    padding-top:10px;
+}
+.product-view-item{
+
+}
+.product-view-link{
+    color:#337ab7;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.product-view-link p{
+    margin:0;
+}
+.product-view-img{
+
+}
+.btn-img{
+
+}
+.product-brand{
+    margin-top:20px;
+    border-bottom:1px solid #a8a8a8;
+}
+.product-brand a{
+    margin-bottom:5px;
+    margin-left: 15px;
+}
+.product-nav{
+
+}
+.product-nav-list{
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    margin: 5px 0;
+}
+.product-nav-item{
+    padding:5px 15px;
+}
+.product-nav-link{
+    color:#337ab7;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration:none;
+}
+.product-nav-link.active{
+    border-bottom:4px solid #3c599b;
+}
+
+/* CONTENT */
+
+.content-item{
+
+}
+.content-heading{
+    margin-top:20px;
+    text-align: center;
+}
+.content-heading span{
+    color:#0E528B;
+    font-size: 3.2rem;
+    padding:8px 18px;
+
+    border-bottom: 3px solid #0E528B;
+}
+.content-text{
+    margin-top:60px;
+    text-align: center;
+}
+.content-text h2{
+    color:#222;
+    font-size: 3.4rem;
+}
+.content-text p{
+    color:#666;
+    padding:0 50px;
+    font-size: 1.6rem;
+    line-height: 24px;
+}
+.content-images{
+
+}
+.content-images-item{
+
+}
+.content-images-item>img{
+    margin-top:10px;
+    width:100%;
+}
+.content-images-item img{
+    width:100%;
+}
+.content-images-item h3{
+    margin:10px 0;
+    font-size: 25px;
+}
+.content-images-item .grid-column-6 p{
+    font-size: 1.5rem;
+    color:#666;
+}
+.content-images-des{
+    text-align: center;
+    padding-top:50px;
+}
+.content-images-des span{
+    color:#333;
+    font-size: 2.4rem;
+}
+.content-images-des p{
+    color:#666;
+    font-size: 1.5rem;
+}
+.content-images .front-img{
+    width:100%;
+}
