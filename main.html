@@ -9,128 +9,206 @@
     <!---->
     <link rel="stylesheet" href="fonts/fontawesome-free-5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="./bootstrap4/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstrap4.5.3/css/bootstrap.css"> <!--bootstrap css-->
+    <script src="jquery/jquery-3.5.1.min.js"></script>                  <!--jquery-->
+    <script src="bootstrap4.5.3/js/bootstrap.min.js"></script>          <!--bootstrap js-->
+    <link rel="stylesheet" href="css/main.css">  
     <script src="mainjs.js" ></script>
 </head>
 <body>
 
     <header class="header">
-        <div class="grid">
-            <ul class="header-navbar">
-                <li class="header-item">
-                    <a href="#" class="header-link">
-                        <img class="header-img-logo" src="images/hyundai-logo.png" alt="Hyundai">
-                    </a>
-                </li>
-                <li class="header-item">
-                    <a href="#" class="header-link">
-                        Giới thiệu
-                    </a>
-                </li>
-                <li class="header-item item-hover active">
-                    <a href="#" class="header-link ">
-                        Sản phẩm
-                    </a>
-                    <ul class="header-dropdown">
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Xe du lịch</a>
-                        </li>
-                        <li class="dropdown-item ">
-                            <a href="#" class="dropdown-link">Xe SUV</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Xe thương mại</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Limousine An Phú</a>
-                        </li>                      
-                    </ul>
-                </li>
-                <li class="header-item item-hover ">
-                    <a href="#" class="header-link">
-                        Tin tức
-                    </a>
-                    <ul class="header-dropdown">
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Tin khuyến mại</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Tin tức chung</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Tin dịch vụ</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Tin tuyển dụng</a>
-                        </li>   
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Hỏi đáp</a>
+        <div class="grid header-list">
+
+            <div class="header-list-left">
+                <div class="header-logo">
+                    <img class="header-img-logo" src="images/hyundai-logo.png" alt="Hyundai">
+                </div>
+                <ul class="header-navbar">
+                    <li class="header-item">
+                        <a href="#" class="header-link">
+                            Giới thiệu
+                        </a>
+                    </li>
+                    <li class="header-item item-hover active">
+                        <a href="#" class="header-link ">
+                            Sản phẩm
+                        </a>
+                        <ul class="header-dropdown">
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Xe du lịch</a>
+                            </li>
+                            <li class="dropdown-items ">
+                                <a href="#" class="dropdown-link">Xe SUV</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Xe thương mại</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Limousine An Phú</a>
+                            </li>                      
+                        </ul>
+                    </li>
+                    <li class="header-item item-hover ">
+                        <a href="#" class="header-link">
+                            Tin tức
+                        </a>
+                        <ul class="header-dropdown">
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Tin khuyến mại</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Tin tức chung</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Tin dịch vụ</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Tin tuyển dụng</a>
+                            </li>   
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Hỏi đáp</a>
+                            </li>                   
+                        </ul>
+                    </li>
+                    <li class="header-item item-hover">
+                        <a href="#" class="header-link">
+                            Dịch vụ
+                        </a>
+                        <ul class="header-dropdown">
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Chăm sóc khách hàng</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Chính sách bảo hành</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Bảo dưỡng định kỳ</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Phụ tùng & phụ kiện</a>
+                            </li>                      
+                        </ul>
+                    </li>
+                    <li class="header-item item-hover">
+                        <a href="#" class="header-link">
+                            Đăng ký lái thử
+                        </a>
+                        <ul class="header-dropdown">
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Đăng ký lái thử</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Đặt lịch bảo dư</a>
+                            </li>                                          
+                        </ul>
+                    </li>
+                    <li class="header-item item-hover">
+                        <a href="#" class="header-link">
+                            Mua xe
+                        </a>
+                        <ul class="header-dropdown">
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Bảng giá</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Dự toán chi phí</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Hỗ trợ trả góp</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#" class="dropdown-link">Hướng dẫn thủ tục</a>
+                            </li>                      
+                        </ul>
+                    </li>
+                    <li class="header-item">
+                        <a href="#" class="header-link">
+                            Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header-list-right">
+                <img class="header-img-agency" src="images/anphu-mobile-toplogo.png" alt="Hyundai">
+            </div>
+
+            <nav class="navbar-show navbar navbar-light bg-white">
+                <a class="navbar-brand" href="#">
+                    <img class="header-img-agency" src="images/anphu-mobile-toplogo.png" alt="Hyundai">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentNV" aria-controls="navbarSupportedContentNV" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>     
+                <div class="header-phone">028 36 36 82 95</div>      
+                <div class="collapse navbar-collapse " id="navbarSupportedContentNV">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Giới thiệu <span class="sr-only">(current)</span></a>
                         </li>                   
-                    </ul>
-                </li>
-                <li class="header-item item-hover">
-                    <a href="#" class="header-link">
-                        Dịch vụ
-                    </a>
-                    <ul class="header-dropdown">
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Chăm sóc khách hàng</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownNV">
+                                <a class="dropdown-item" href="#">Xe du lịch</a>
+                                <a class="dropdown-item" href="#">Xe SUV</a>                       
+                                <a class="dropdown-item" href="#">Xe thương mại</a>
+                                <a class="dropdown-item" href="#">XLimousine An Phú</a>
+                            </div>
                         </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Chính sách bảo hành</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tin tức
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownNV">
+                                <a class="dropdown-item" href="#">Tin khuyến mại</a>
+                                <a class="dropdown-item" href="#">Tin tức chung</a>                       
+                                <a class="dropdown-item" href="#">Tin dịch vụ</a>
+                                <a class="dropdown-item" href="#">Tin tuyển dụng</a>
+                                <a class="dropdown-item" href="#">Hỏi đáp</a>
+                            </div>
                         </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Bảo dưỡng định kỳ</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dịch vụ
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownNV">
+                                <a class="dropdown-item" href="#">Chăm sóc khách hàng</a>
+                                <a class="dropdown-item" href="#">Chính sách bảo hành</a>
+                                <a class="dropdown-item" href="#">Bảo dưỡng định kỳ</a>
+                                <a class="dropdown-item" href="#">Phụ tùng & phụ kiện</a>
+                            </div>
                         </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Phụ tùng & phụ kiện</a>
-                        </li>                      
-                    </ul>
-                </li>
-                <li class="header-item item-hover">
-                    <a href="#" class="header-link">
-                        Đăng ký lái thử
-                    </a>
-                    <ul class="header-dropdown">
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Đăng ký lái thử</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Đăng ký lái thử
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownNV">
+                                <a class="dropdown-item" href="#">Đăng ký lái thử</a>
+                                <a class="dropdown-item" href="#">Đặt lịch bảo dưỡng</a>                              
+                            </div>
                         </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Đặt lịch bảo dư</a>
-                        </li>                                          
-                    </ul>
-                </li>
-                <li class="header-item item-hover">
-                    <a href="#" class="header-link">
-                        Mua xe
-                    </a>
-                    <ul class="header-dropdown">
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Bảng giá</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Mua xe
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownNV">
+                                <a class="dropdown-item" href="#">Bảng giá</a>
+                                <a class="dropdown-item" href="#">Dự toán chi phí</a>
+                                <a class="dropdown-item" href="#">Hỗ trợ trả góp</a>
+                                <a class="dropdown-item" href="#">Hướng dẫn thủ tục</a>
+                            </div>
                         </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Dự toán chi phí</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
                         </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Hỗ trợ trả góp</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="#" class="dropdown-link">Hướng dẫn thủ tục</a>
-                        </li>                      
-                    </ul>
-                </li>
-                <li class="header-item">
-                    <a href="#" class="header-link">
-                        Liên hệ
-                    </a>
-                </li>
-                <li class="header-item">
-                    <a href="#" class="header-link">
-                        <img class="header-img-agency" src="images/daily-logo.png" alt="Hyundai">
-                    </a>
-                </li>
-            </ul>
+                    </ul>                   
+                </div>
+            </nav>
+            
         </div>
     </header>
 
@@ -219,55 +297,88 @@
                     </div>
                 </div>
             </div>
-            <!--fixed element-->
-            <div class="social-link">
-                <div class="social-icon">
-                    <a href="https://www.youtube.com/channel/UC42dzoVIXh4275k3B0vkRqw?view_as=subscriber">
-                        <img src="images/youtube.svg" alt="Youtube">
-                    </a>
-                </div>
-                <div class="social-icon">
-                    <a href="https://www.facebook.com/hyundaianphu.mpcauto.vn">
-                        <img src="images/facebook.svg" alt="Facebook">
-                    </a>
-                </div>
-            </div>
-
-            <div class="sevice-option">
-                <div class="sevice-item">
-                    <a class="sevice-link" href="#">Đăng ký lái thử</a>
-                </div>
-                <div class="sevice-item">
-                    <a class="sevice-link" href="#">Đặt lịch bảo dưỡng</a>
-                </div>
-            </div>
-
-            <div class="phone">
-
-                <a href="tel:1900 988 978">
-                    <img src="images/phone-ring.png" alt="" class="phone-img">
-
-                </a>
-                <p class="phone-number">1900 988 978</p>
-            </div>
-
-            <div class="top-page">
-                <a class="go-to-top" href="#">
-                    <img class="move-icon" src="images/back_to_top_1.png" alt="">
-                </a>
-            </div>
-
-            <div class="box-chat">
-                <img src="images/boxchat-icon.png" alt="">
-                <span>Chat với chúng tôi</span>
-            </div>
-            <!--fixed element-->
         </div>
     </div>
 
+    <!--fixed element-->
+    <div class="social-link">
+        <div class="social-icon">
+            <a href="https://www.youtube.com/channel/UC42dzoVIXh4275k3B0vkRqw?view_as=subscriber">
+                <img src="images/youtube.svg" alt="Youtube">
+            </a>
+        </div>
+        <div class="social-icon">
+            <a href="https://www.facebook.com/hyundaianphu.mpcauto.vn">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+        </div>
+    </div>
+
+    <div class="sevice-option">
+        <div class="sevice-item">
+            <a class="sevice-link" href="#">Đăng ký lái thử</a>
+        </div>
+        <div class="sevice-item">
+            <a class="sevice-link" href="#">Đặt lịch bảo dưỡng</a>
+        </div>
+    </div>
+
+    <div class="top-page">
+        <a class="go-to-top" href="#">
+            <img class="move-icon" src="images/back_to_top_1.png" alt="">
+        </a>
+    </div>
+
+    <div class="phone">
+            <a href="">
+              
+              <!-- <div class="quick-alo-ph-circle-fill"></div> -->
+              <div class="phone-number">
+                <div class="quick-alo-ph-img-circle"></div>
+                <span>1900 988 978</span> 
+              </div>
+              <div class="quick-alo-ph-circle"></div>
+            </a>
+    </div>
+
+    <div class="box-chat">
+        <div class="chat-heading">
+            <img src="images/boxchat-icon.png" alt="">
+            <span id="chat" onclick="openChat()">Chat với chúng tôi</span>
+            <button type="button" class="close-chat" id="close" onclick="closeChat()"> x</button>
+        </div>       
+        <div class="box-chat-popup" id="show-chat" >
+            <div class="text-area">
+                <div class="text-box">
+                    <p>
+                        <input type="text "placeholder="Mời bạn nhập tên">
+                    </p>
+                </div>
+                <div class="text-box">
+                    <p>
+                        <input type="text "placeholder="Mời bạn nhập Email">
+                    </p>
+                </div>
+                <div class="text-box">
+                    <p>
+                        <input type="text "placeholder="Mời bạn nhập số điện thoại">
+                    </p>
+                </div>
+                <div class="text-box"> 
+                    <p>
+                        <textarea class="question" type="text "placeholder="Mời bạn nhập câu hỏi?"></textarea>
+                    </p>
+                </div>
+                <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+            </div>
+            
+        </div>
+    </div>
+    <!--fixed element-->
+
     <div class="email-user">
-        <div class="grid">
-            <span class="email-title">Đăng ký để nhận thông tin từ Hyundai An Phú</span>
+        <div class="grid email-user-content">
+            <span class="email-title">Đăng ký để nhận tin từ Hyundai An Phú</span>
             <span class="email-box">
                 <input type="text" placeholder="Nhập địa chỉ Email" class="email-input">
                 <button class="email-btn">Gửi</button>
@@ -374,7 +485,6 @@
         </div>
     </footer>
 
-    
-
 </body>
+
 </html>

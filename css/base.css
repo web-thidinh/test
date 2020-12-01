@@ -1,20 +1,25 @@
 *{
     box-sizing: inherit;
+    font-family: 'Modern H Bold',sans-serif;
 }
 html{
     font-size: 62.5%;/*1rem = 10px*/
     box-sizing: border-box;
-    font-family: 'Modern H Bold',sans-serif;
+    
+}
+a{
+    color:#337ab7;
+    text-decoration:none;
 }
 
 /* Frame responsive*/
 .grid{
     width: 1200px;
     max-width:100%;
-    margin: 0 auto;
+    margin: auto;
 }
 .grid-content{
-    width:970px;
+    max-width:970px;
     margin-left:auto;
     margin-right:auto;
 }
@@ -24,8 +29,6 @@ html{
 .grid-row{
     display:flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
 }
 .grid-column-2{
     width:16.666%;
@@ -49,6 +52,11 @@ html{
 }
 .grid-column-8{
     width:66.666%;
+    padding-left:15px;
+    padding-right: 15px;
+}
+.grid-column-10{
+    width:83.333%;
     padding-left:15px;
     padding-right: 15px;
 }

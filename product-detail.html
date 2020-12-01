@@ -9,10 +9,13 @@
     <!---->
     <link rel="stylesheet" href="fonts/fontawesome-free-5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bootstrap4.5.3/css/bootstrap.css"> <!--bootstrap css-->
+    <script src="jquery/jquery-3.5.1.min.js"></script>                  <!--jquery-->
+    <script src="bootstrap4.5.3/js/bootstrap.min.js"></script>          <!--bootstrap js-->
     <link rel="stylesheet" href="css/product-detail.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="mainjs.js" ></script>
+    <script type="text/javascript" src="mainjs.js" ></script>
+    <script type="text/javascript" src="jquery/jquery.panorama.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>   
     <div class="main-content">
@@ -24,243 +27,1246 @@
             <img src="images/product-detail/ba_bodyBG_5.png" alt="">
         </div>
         <header class="header">
-            <div class="grid">
-                <ul class="header-navbar">
-                    <li class="header-item">
-                        <a href="#" class="header-link">
-                            <img class="header-img-logo" src="images/hyundai-logo.png" alt="Hyundai">
-                        </a>
-                    </li>
-                    <li class="header-item">
-                        <a href="#" class="header-link">
-                            Giới thiệu
-                        </a>
-                    </li>
-                    <li class="header-item item-hover active">
-                        <a href="#" class="header-link ">
-                            Sản phẩm
-                        </a>
-                        <ul class="header-dropdown">
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Xe du lịch</a>
-                            </li>
-                            <li class="dropdown-item ">
-                                <a href="#" class="dropdown-link">Xe SUV</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Xe thương mại</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Limousine An Phú</a>
-                            </li>                      
-                        </ul>
-                    </li>
-                    <li class="header-item item-hover ">
-                        <a href="#" class="header-link">
-                            Tin tức
-                        </a>
-                        <ul class="header-dropdown">
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Tin khuyến mại</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Tin tức chung</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Tin dịch vụ</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Tin tuyển dụng</a>
-                            </li>   
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Hỏi đáp</a>
+            <div class="grid header-list">
+    
+                <div class="header-list-left">
+                    <div class="header-logo">
+                        <img class="header-img-logo" src="images/hyundai-logo.png" alt="Hyundai">
+                    </div>
+                    <ul class="header-navbar">
+                        <li class="header-item">
+                            <a href="#" class="header-link">
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li class="header-item item-hover active">
+                            <a href="#" class="header-link ">
+                                Sản phẩm
+                            </a>
+                            <ul class="header-dropdown">
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Xe du lịch</a>
+                                </li>
+                                <li class="dropdown-items ">
+                                    <a href="#" class="dropdown-link">Xe SUV</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Xe thương mại</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Limousine An Phú</a>
+                                </li>                      
+                            </ul>
+                        </li>
+                        <li class="header-item item-hover ">
+                            <a href="#" class="header-link">
+                                Tin tức
+                            </a>
+                            <ul class="header-dropdown">
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Tin khuyến mại</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Tin tức chung</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Tin dịch vụ</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Tin tuyển dụng</a>
+                                </li>   
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Hỏi đáp</a>
+                                </li>                   
+                            </ul>
+                        </li>
+                        <li class="header-item item-hover">
+                            <a href="#" class="header-link">
+                                Dịch vụ
+                            </a>
+                            <ul class="header-dropdown">
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Chăm sóc khách hàng</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Chính sách bảo hành</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Bảo dưỡng định kỳ</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Phụ tùng & phụ kiện</a>
+                                </li>                      
+                            </ul>
+                        </li>
+                        <li class="header-item item-hover">
+                            <a href="#" class="header-link">
+                                Đăng ký lái thử
+                            </a>
+                            <ul class="header-dropdown">
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Đăng ký lái thử</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Đặt lịch bảo dư</a>
+                                </li>                                          
+                            </ul>
+                        </li>
+                        <li class="header-item item-hover">
+                            <a href="#" class="header-link">
+                                Mua xe
+                            </a>
+                            <ul class="header-dropdown">
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Bảng giá</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Dự toán chi phí</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Hỗ trợ trả góp</a>
+                                </li>
+                                <li class="dropdown-items">
+                                    <a href="#" class="dropdown-link">Hướng dẫn thủ tục</a>
+                                </li>                      
+                            </ul>
+                        </li>
+                        <li class="header-item">
+                            <a href="#" class="header-link">
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="header-list-right">
+                    <img class="header-img-agency" src="images/anphu-mobile-toplogo.png" alt="Hyundai">
+                </div>
+
+                <nav class="navbar-show navbar navbar-light ">
+                    <a class="navbar-brand" href="#">
+                        <img class="header-img-agency" src="images/anphu-mobile-toplogo.png" alt="Hyundai">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentNV" aria-controls="navbarSupportedContentNV" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>     
+                    <div class="header-phone">028 36 36 82 95</div>      
+                    <div class="collapse navbar-collapse" id="navbarSupportedContentNV">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Giới thiệu <span class="sr-only">(current)</span></a>
                             </li>                   
-                        </ul>
-                    </li>
-                    <li class="header-item item-hover">
-                        <a href="#" class="header-link">
-                            Dịch vụ
-                        </a>
-                        <ul class="header-dropdown">
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Chăm sóc khách hàng</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sản phẩm
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownNV">
+                                    <a class="dropdown-item" href="#">Xe du lịch</a>
+                                    <a class="dropdown-item" href="#">Xe SUV</a>                       
+                                    <a class="dropdown-item" href="#">Xe thương mại</a>
+                                    <a class="dropdown-item" href="#">XLimousine An Phú</a>
+                                </div>
                             </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Chính sách bảo hành</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Tin tức
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownNV">
+                                    <a class="dropdown-item" href="#">Tin khuyến mại</a>
+                                    <a class="dropdown-item" href="#">Tin tức chung</a>                       
+                                    <a class="dropdown-item" href="#">Tin dịch vụ</a>
+                                    <a class="dropdown-item" href="#">Tin tuyển dụng</a>
+                                    <a class="dropdown-item" href="#">Hỏi đáp</a>
+                                </div>
                             </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Bảo dưỡng định kỳ</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dịch vụ
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownNV">
+                                    <a class="dropdown-item" href="#">Chăm sóc khách hàng</a>
+                                    <a class="dropdown-item" href="#">Chính sách bảo hành</a>
+                                    <a class="dropdown-item" href="#">Bảo dưỡng định kỳ</a>
+                                    <a class="dropdown-item" href="#">Phụ tùng & phụ kiện</a>
+                                </div>
                             </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Phụ tùng & phụ kiện</a>
-                            </li>                      
-                        </ul>
-                    </li>
-                    <li class="header-item item-hover">
-                        <a href="#" class="header-link">
-                            Đăng ký lái thử
-                        </a>
-                        <ul class="header-dropdown">
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Đăng ký lái thử</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Đăng ký lái thử
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownNV">
+                                    <a class="dropdown-item" href="#">Đăng ký lái thử</a>
+                                    <a class="dropdown-item" href="#">Đặt lịch bảo dưỡng</a>                              
+                                </div>
                             </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Đặt lịch bảo dư</a>
-                            </li>                                          
-                        </ul>
-                    </li>
-                    <li class="header-item item-hover">
-                        <a href="#" class="header-link">
-                            Mua xe
-                        </a>
-                        <ul class="header-dropdown">
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Bảng giá</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Mua xe
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownNV">
+                                    <a class="dropdown-item" href="#">Bảng giá</a>
+                                    <a class="dropdown-item" href="#">Dự toán chi phí</a>
+                                    <a class="dropdown-item" href="#">Hỗ trợ trả góp</a>
+                                    <a class="dropdown-item" href="#">Hướng dẫn thủ tục</a>
+                                </div>
                             </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Dự toán chi phí</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Liên hệ</a>
                             </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Hỗ trợ trả góp</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="dropdown-link">Hướng dẫn thủ tục</a>
-                            </li>                      
-                        </ul>
-                    </li>
-                    <li class="header-item">
-                        <a href="#" class="header-link">
-                            Liên hệ
-                        </a>
-                    </li>
-                    <li class="header-item">
-                        <a href="#" class="header-link">
-                            <img class="header-img-agency" src="images/daily-logo.png" alt="Hyundai">
-                        </a>
-                    </li>
-                </ul>
+                        </ul>                   
+                    </div>
+                </nav>
+                
             </div>
         </header>
 
         <div class="grid-content">
-            <div class="product-detail">               
+            <div class="product-detail"> 
+
                 <div class="product-detail-top">
-                    <div class=" grid-row product-show">       
-                        <div class="grid-column-4 product-description">
-                            <h3 class="name">GRAND I10</h3>
-                            <div class="product-slogan">Nhấn nút khởi động cuộc sống mới</div>
-                            <div class=text>
-                                <p>
-                                    - Thiết kế cá tính, thời trang 
-                                    <br>
-                                    - Kết nối không giới hạn 
-                                    <br>                              
-                                    - Bền bỉ, mạnh mẽ và an toàn 
-                                </p>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">                     
+                        <div class="carousel-inner">
+
+                          <div class="carousel-item active">
+                            <div class="row product-show product-intro">       
+                                <div class=" col-md-4  product-description">
+                                    <h3 class="name">GRAND I10</h3>
+                                    <div class="product-slogan">Nhấn nút khởi động cuộc sống mới</div>
+                                    <div class=text>
+                                        <p>
+                                            - Thiết kế cá tính, thời trang 
+                                            <br>
+                                            - Kết nối không giới hạn 
+                                            <br>                              
+                                            - Bền bỉ, mạnh mẽ và an toàn 
+                                        </p>
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">DỰ TOÁN CHI PHÍ</a>
+                                    </div>
+            
+                                </div>
+                                <div class=" col-md-8   product-detail-image">
+                                    <img src="images/product-detail/GRAND-I10.png" alt="">
+                                </div>
                             </div>
-                            <div class="price">
-                                <a href="#">DỰ TOÁN CHI PHÍ</a>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="row product-show product-experience">
+                                <style>
+                                    .experience_option .color_view {
+                                        color: #595959;
+                                        font-weight: bold;
+                                        height: 16px;
+                                        width: 120px;
+                                        line-height: 16px;
+                                        margin-bottom: 9px;
+                                        overflow: hidden;
+                                    }
+                                    .experience_option .color_view img {
+                                height: 16px;
+                                margin-right: 4px;
+                                vertical-align: top;
+                                width: 16px;
+                                display:inline;
+                                }
+                                    .experience_option ul li {
+                                display: block;
+                                position: relative;
+                                float: left;
+                                margin-right: 6px;
+                                margin-bottom: 2px;
+                                
+                                }
+                                    .experience_option ul li span {
+                                  display: block;
+                                  height: 38px;
+                                  position: absolute;
+                                  top: 0;
+                                  left: 0;
+                                  width: 38px;
+                                }
+                                
+                                </style>
+                                <div class="col-md-10 col-sm-12 product-experience-images">
+                                    <p>Ngoại thất</p>                                    
+                                        <img src="images/product-detail/es_0.png" style="display:none;"alt=""> 
+                                        <div class="experience_panoramabox exterior" id="panorama">
+                                            <!-- <div class="panorama" style="position: relative; margin: auto; padding: 0; height: 289px; width: 640px; overflow: hidden;">
+                                                <img style="width:640px; height:289px;margin: 0px; padding: 0px;" src="" alt="" class="panorama">
+                                                <div class="pano_loading_masque" style="position: absolute; top: 0; left: 0; width: 640px; height: 289px; opacity: .5; filter:alpha(opacity=50);"></div>
+                                                <p class="pano_loading_start">
+                                                    <a href="#">
+                                                        <img src="images/product-detail/btn_start.png" alt="">
+                                                    </a>
+                                                </p>
+                                                <p class="pano_loading_percent"style="position: absolute; display: none; top: 90px; left: 320px; text-align: center; width:90px; height:90px;">
+                                                    <img src="images/product-detail/loading.gif" alt="loading">
+                                                    <span style="position:relative;height:18px;display:block;width:80px;margin:-29px auto 0 auto;font-size:12px;color:#333;background:#f0efed;">0%</span>
+                                                </p>
+                                                <a href="#" class="pano_loading_stop" style="display: none; color: white; position: absolute; top: 5px; right: 5px; text-decoration: none;">
+                                                    [stop]
+                                                </a>                                                                                                                           
+                                            </div> -->
+                                        </div>                               
+                                    
+                                </div>
+                                <div class="col-md-2 col-sm-12 product-experience-color">
+                                    <div class="experience_option">
+                                        <p class="color-view">
+                                          
+                                        </p>  
+                                        <ul class="color-list">
+                                            <!-- <li class="e0 ">
+                                                <a code="ex_cte" href="#" title="Cát">
+                                                    <img src="images/product-detail/ex_Sepia_topaz.png" alt="">
+                                                </a>
+                                             
+                                            </li> -->
+                                            <!-- <li class="e1"> -->
+                                                <!-- <a code="ex_nw" href="#" title="Trắng">
+                                                    <img src="images/product-detail/ex_Noble_White.png" title="Trắng" alt="">
+                                                </a> -->
+                                                
+                                            <!-- </li> -->
+                                            <!-- <li class="e2"> -->
+                                                <!-- <a code="ex_xeb" href="#" title="Đỏ">
+                                                    <img src="images/product-detail/ex_Ruby_wine.png" title="Đỏ" alt="">
+                                                </a> -->
+                                                
+                                            <!-- </li> -->
+                                            <!-- <li class="e3"> -->
+                                                <!-- <a code="ex_y5" href="#" title="Bạc">
+                                                    <img src="images/product-detail/ex_Sleek_Silver.png" title="Bạc" alt="">
+                                                </a> -->
+                                                
+                                            <!-- </li> -->
+                                            <!-- <li class="e4"> -->
+                                                <!-- <a code="ex_ydg" href="#" title="Xanh">
+                                                    <img src="images/product-detail/ex_Night_Sky.png" title="Xanh" alt="">
+                                                </a> -->
+<!--                                                 
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+                            <script type="text/javascript">                              
+                                //<![CDATA[
+                                var iExtCount= 5; var iIntCount=0; var expRoot= '/images/product-detail/exp-360/grand-i10'; 
+                                var colorRoot = '/images/product-detail/exp-360'; var arrExt = [{Code:'ex_cte',NameVN:'Cát',
+                                NameEN:'Sepia topaz'},{Code:'ex_nw',NameVN:'Trắng',NameEN:'Noble White'},{Code:'ex_xeb',NameVN:'Đỏ',
+                                NameEN:'Ruby wine'},{Code:'ex_y5',NameVN:'Bạc',NameEN:'Sleek Silver'},{Code:'ex_ydg',NameVN:'Xanh',
+                                NameEN:'Night Sky'}]; var arrInt = [];
+                                //]]>
+                            </script>
+                            <script type="text/javascript">
+                                //$(document).ready(function () {
+                                //	interiorInit();
+                                //	exteriorInit();
+                                //});
+
+                                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                                    var carColor = "";
+                                    var heii = 145;
+                                    var widi = 320;
+                                    var hei = 145;
+                                    var wid = 320;
+                                    $("#tempimage img").height(145);
+                                    $("#tempimage img").width(320);
+                                } else {
+                                    var carColor = "";
+                                    var heii = 289;
+                                    var widi = 640;
+                                    var hei = 289;
+                                    var wid = 640;
+                                }
+                                $(function () {
+                                    $(".experience_category a").click(function () {
+                                        if ($(this).attr("class") != "on") {
+                                            $(".experience_category a").removeClass("on");
+                                            $(this).addClass("on");
+                                            if ($(this).parent().attr("class") == "exterior")
+                                                exteriorInit();
+                                            else
+                                                interiorInit();
+                                        }
+                                        return false;
+                                    });
+                                    exteriorInit();
+                                });
+                                var iCount = iIntCount;
+                                function interiorInit() {
+                                    //$(".experience_option p").empty();
+                                    $(".experience_option ul").empty();
+                                    for (var i = 1; i < iCount + 1; i++) {
+                                        $(".experience_option ul").append("<li class=\"i" + i + "\"><a code='" + arrInt[i - 1]["Code"] + "' href=\"#\" title='" + arrInt[i - 1]["NameVN"] + "'><img alt=\"abc\" src=\"" + expRoot + "/i" + i + ".gif\"></a></li>");
+                                    }
+                                    optionInit();
+                                    $(".experience_option li a").click(function () {
+                                        $(".experience_option li a").removeClass("on");
+                                        $(".experience_option li span").hide();
+                                        $(this).addClass("on");
+                                        if ($("span", $(this).parent()).length == 0)
+                                            $("<span><img src=\"/images/product-detail/exp-360/cover_color.png\" /></span>").appendTo($(this).parent());
+                                        else
+                                            $("span", $(this).parent()).show();
+                                        carColor = $(this).parent().attr("class");
+                                        $(".experience_panoramabox").empty();
+                                        heii = $("#tempimage img").height();
+                                        widi = $("#tempimage img").width();
+                                        //$(".experience_panoramabox").append("<img class='panorama' width='" + widi + "' height='" + heii + "' src='" + expRoot + "/" + carColor + "/is_100.jpg" + "' />");
+                                        //$(".experience_panoramabox img.panorama").one("load", function () {
+                                        //    $(this).panorama({ views_number: 120, views_columns: 20 });
+                                        //    $(".pano_loading_start img").attr("src", "/Content/images/btn_start2.png");
+                                        //});
+                                        var folder = $(this).parent().attr('class');
+                                        pannellum.viewer('panorama', {
+                                            "type": "equirectangular",
+                                            "panorama": "" + expRoot + "/" + folder + "/isp.jpg",
+                                            "preview": "" + expRoot + "/" + folder + "/isp_thumb.jpg"
+                                        });
+
+                                        $('#panorama').height($('#panorama').width() / 2);
+
+                                        $('#panorama .pnlm-load-button p').remove();
+                                        $('#panorama .pnlm-load-button').append('<img src="/images/product-detail/btn_start.png" alt="Start">');
+                                        $(".experience_option p").html("<img src='" + $("img", $(this)).attr("src") + "'/>&nbsp;" + $(this).attr("title"));
+                                        return false;
+                                        return false;
+                                    });
+                                    $(".experience_option li a:first").click();
+                                }
+                                var eCount = iExtCount;
+                                function exteriorInit() {
+                                    $(".experience_option ul").empty();
+                                    for (var i = 0; i < eCount; i++) {
+                                        //$(".experience_option ul").append("<li class=\"e" + i + "\"><a href=\"#\"><img alt=\"\" src=\"" + carRoot + "/experience/e" + i + ".png\"></a></li>");
+                                        $(".experience_option ul").append("<li class=\"e" + i + "\"><a code='" + arrExt[i]["Code"] + "' href=\"#\" title='" + arrExt[i]["NameVN"] + "'><img alt=\"\" src=\"" + colorRoot + "/ex_" + arrExt[i]["NameEN"].replace(/\s/g, "_") + ".png\"></a></li>");
+                                    }
+                                    optionInit();
+                                    $(".experience_option li a").click(function () {
+                                        $(".experience_option li a").removeClass("on");
+                                        $(".experience_option li span").hide();
+                                        $(this).addClass("on");
+                                        if ($("span", $(this).parent()).length == 0)
+                                            $("<span><img src=\"/images/product-detail/exp-360/cover_color.png\" /></span>").appendTo($(this).parent());
+                                        else
+                                            $("span", $(this).parent()).show();
+                                        carColor = $(this).attr("code");
+
+                                        $(".experience_panoramabox").empty();
+                                        
+                                        $(".experience_panoramabox").append("<img class='panorama' width='" + wid + "' height='" + hei + "' src='" + expRoot + "/" + carColor + "/es_0.png" + "' />");
+                                        $(".experience_panoramabox img.panorama").one("load", function () { $(this).panorama({ views_number: 36, views_columns: 36 }); });
+                                        //
+                                        $(".experience_option p").html("<img src='" + $("img", $(this)).attr("src") + "'/>&nbsp;" + $(this).attr("title"));
+                                        return false;
+                                    });
+                                    $(".experience_option li a:first").click();
+                                }
+                                function optionInit() {
+                                    var i = $(".experience_option ul li").length;
+                                    
+                                }
+                                function showPanoramaLargeLayer() {
+                                    if ($("#layer_experience_panorama").length == 0)
+                                        $("#wrap").append('<div id="layer_experience_panorama" class="layer_experience_panorama"></div>');
+                                    else
+                                    $("#layer_experience_panorama").empty();
+                                    $("#layer_experience_panorama").append('<div class="layer_panorama_close"><a href="javascript:closeLayer();"><img alt="close" src="/Content/images/btn_layer_close.png"></a></div>');
+                                    $("#layer_experience_panorama").append('<div class="normal"><div class="box"></div></div>');
+                                    $("#layer_experience_panorama").append('<div class="experience_category"><ul><li><a class="on" href="#">Ngoại thất</a></li><li><a href="javascript:cubeExterienceCustomiz();">Nội thất</a></li></ul></div>');
+                                    $("#layer_experience_panorama").append('<div class="experience_desc"><span>The image may differ from the actual product.</span></div>');
+                                    $("#layer_experience_panorama").height($(document).height()).width($(window).width()).fadeIn();
+                                    $("#layer_experience_panorama .box").append("<img class='panorama_large' src='" + carRoot + carColor + "/b_0.png" + "' width='1024' height='462'/>");
+                                    $("#layer_experience_panorama img.panorama_large").panorama({ views_number: 36, views_columns: 36 });
+                                }
+                                function closeLayer() {
+                                    $('#layer_experience_panorama').fadeOut();
+                                }
+                            </script>
+                          </div>
+
+                          <div class="carousel-item carousel-img">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">Tổng quan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">Nội thất</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#references" role="tab" data-toggle="tab">Ngoại thất</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active show" id="profile">
+                                        <div class="row">
+                                            <div class="tab-content-item col-md-4 col-sm-4 col-lg-3 col-4">
+                                                <img src="images/product-detail/gallery_sum01.png" alt="" style="width:100%">
+                                            </div>
+                                            <div class="tab-content-item col-md-4 col-sm-4 col-lg-3 col-4">
+                                                <img src="images/product-detail/gallery_sum01.png" alt="">
+                                            </div>
+                                            <div class="tab-content-item col-md-4 col-sm-4 col-lg-3 col-4">
+                                                <img src="images/product-detail/gallery_sum01.png" alt="">
+                                            </div>
+                                            <div class="tab-content-item col-md-4 col-sm-4 col-lg-3 col-4">
+                                                <img src="images/product-detail/gallery_sum01.png" alt="">
+                                            </div>
+                                            <div class="tab-content-item col-md-4 col-sm-4 col-lg-3 col-4">
+                                                <img src="images/product-detail/gallery_sum01.png" alt="">
+                                            </div>
+                                            <div class="tab-content-item col-md-4 col-sm-4 col-lg-3 col-4">
+                                                <img src="images/product-detail/gallery_sum01.png" alt="">
+                                            </div>
+                                            <div class="tab-content-item col-md-4 col-sm-4 col-lg-3 col-4">
+                                                <img src="images/product-detail/gallery_sum01.png" alt="">
+                                            </div>
+                                            <div class="tab-content-item col-md-4 col-sm-4 col-lg-3 col-4">
+                                                <img src="images/product-detail/gallery_sum01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="buzz">
+                                        
     
-                        </div>
-                        <div class="grid-column-8 product-detail-image">
-                            <img src="images/product-detail/GRAND-I10.png" alt="">
-                        </div>
-                    </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="references">
+                                        
+    
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item" style="background-color: gray;width:100%; height:350px">                           
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="product-technical">
+                                <div class="frame">
+                                    <table border="1">
+                                        <colgroup>
+                                            <col width="15%"></col>
+                                            <col width="40%"></col>
+                                            <col width="15%"></col>
+                                            <col width="15%"></col>
+                                            <col width="15%"></col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2" rowspan="2">
+                                                    GRAND i10
+                                                </th>
+                                                <th class="mauxe" colspan="3">
+                                                    <strong>Mẫu xe</strong>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th class="thietbi">
+                                                    <strong>1.0 M/T</strong>
+                                                </th>
+                                                <th class="thietbi">
+                                                    <strong>1.0 A/T</strong>
+                                                </th>
+                                                <th class="thietbi">
+                                                    <strong>1.25 AT</strong>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="type" style="text-align: center;" rowspan="3">
+                                                    K&iacute;ch thước chung
+                                                </th>
+                                                <th style="text-align: center;">
+                                                    K&iacute;ch thước tổng thể (DxRxC) - (mm)
+                                                </th>
+                                                <td colspan="3">
+                                                    3.765 x 1.660 x 1.520
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Chiều d&agrave;i cơ sở (mm)
+                                                </th>
+                                                <td colspan="3">
+                                                    2.425
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Khoảng s&aacute;ng gầm xe (mm)
+                                                </th>
+                                                <td colspan="3">
+                                                    167
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="type" style="text-align: center;" rowspan="7">
+                                                    Động cơ hộp số
+                                                </th>
+                                                <th style="text-align: center;">
+                                                    Động cơ
+                                                </th>
+                                                <!-- Engine Capacity + Injection type + Cam type (Theta Ⅱ 2.0 MPI DOHC)-->
+                                                <!-- Engine Capacity + Fuel System-->
+                                                <td colspan="2">
+                                                    Kappa 1.0L
+                                                </td>
+                                                <td>
+                                                    Kappa 1.2L
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Dung t&iacute;ch xi lanh (cc)
+                                                </th>
+                                                <td colspan="2">
+                                                    998
+                                                </td>
+                                                <td>
+                                                    1.248
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Nhi&ecirc;n liệu
+                                                </th>
+                                                <td colspan="3">
+                                                    Xăng
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    C&ocirc;ng suất động cơ (ps/rpm)
+                                                </th>
+                                                <td colspan="2">
+                                                    66 / 5.500
+                                                </td>
+                                                <td>
+                                                    87 / 6.000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    M&ocirc; men xoắn lớn nhất (kgm/rpm)
+                                                </th>
+                                                <td colspan="2">
+                                                    9.6 / 3.500
+                                                </td>
+                                                <td>
+                                                    12.2 / 4.000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Hộp số
+                                                </th>
+                                                <td>
+                                                    Số s&agrave;n 5 cấp
+                                                </td>
+                                                <td colspan="2">
+                                                    Tự động 4 cấp
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Truyền động
+                                                </th>
+                                                <td colspan="3">
+                                                    Dẫn động 2 b&aacute;nh (2WD)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="type" style="text-align: center;" rowspan="5">
+                                                    Hệ thống phanh, treo, l&aacute;i
+                                                </th>
+                                                <th style="text-align: center;">
+                                                    Phanh trước/sau
+                                                </th>
+                                                <!-- Engine Capacity + Injection type + Cam type (Theta Ⅱ 2.0 MPI DOHC)-->
+                                                <!-- Engine Capacity + Fuel System-->
+                                                <td colspan="3">
+                                                    Phanh đĩa/phanh tang trống
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Hệ thống treo trước
+                                                </th>
+                                                <td colspan="3">
+                                                    Độc lập kiểu Macpherson
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Hệ thống treo sau
+                                                </th>
+                                                <td colspan="3">
+                                                    Thanh xoắn
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Hệ thống trợ lực l&aacute;i
+                                                </th>
+                                                <td colspan="3">
+                                                    Điện
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    V&ocirc; lăng điều chỉnh cơ
+                                                </th>
+                                                <td colspan="3">
+                                                    Gật g&ugrave;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="type" style="text-align: center;" rowspan="3">
+                                                    An to&agrave;n
+                                                </th>
+                                                <th style="text-align: center;">
+                                                    Cảm biến l&ugrave;i
+                                                </th>
+                                                <!-- Engine Capacity + Injection type + Cam type (Theta Ⅱ 2.0 MPI DOHC)-->
+                                                <!-- Engine Capacity + Fuel System-->
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Hệ thống t&uacute;i kh&iacute;
+                                                </th>
+                                                <td>
+                                                    B&ecirc;n l&aacute;i
+                                                </td>
+                                                <td>
+                                                    B&ecirc;n l&aacute;i
+                                                </td>
+                                                <td>
+                                                    B&ecirc;n l&aacute;i + B&ecirc;n phụ
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Hệ thống chống b&oacute; cứng phanh ABS
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="type" style="text-align: center;" rowspan="5">
+                                                    Hệ thống l&aacute;i
+                                                </th>
+                                                <th style="text-align: center;">
+                                                    M&acirc;m đ&uacute;c hợp kim
+                                                </th>
+                                                <!-- Engine Capacity + Injection type + Cam type (Theta Ⅱ 2.0 MPI DOHC)-->
+                                                <!-- Engine Capacity + Fuel System-->
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Cỡ lốp
+                                                </th>
+                                                <td>
+                                                    165 / 65 R14
+                                                </td>
+                                                <td>
+                                                    165 / 65 R14
+                                                </td>
+                                                <td>
+                                                    165 / 65 R14
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Lốp dự ph&ograve;ng c&ugrave;ng cỡ
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    V&ocirc; lăng điều chỉnh cơ
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Trợ lực l&aacute;i điện
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="type" style="text-align: center;" rowspan="4">
+                                                    Ngoại thất
+                                                </th>
+                                                <th style="text-align: center;">
+                                                    Đ&egrave;n sương m&ugrave; trước
+                                                </th>
+                                                <!-- Engine Capacity + Injection type + Cam type (Theta Ⅱ 2.0 MPI DOHC)-->
+                                                <!-- Engine Capacity + Fuel System-->
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Xi nhan tr&ecirc;n gương chiếu hậu
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Ốp th&acirc;n xe
+                                                </th>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Lưới tản nhiệt mạ chrome
+                                                </th>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="type" style="text-align: center;" rowspan="13">
+                                                    Nội thất &amp; Tiện nghi
+                                                </th>
+                                                <th style="text-align: center;">
+                                                    V&ocirc; lăng, tay nắm v&agrave; cần số bọc da
+                                                </th>
+                                                <!-- Engine Capacity + Injection type + Cam type (Theta Ⅱ 2.0 MPI DOHC)-->
+                                                <!-- Engine Capacity + Fuel System-->
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Ghế da
+                                                </th>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    AM/FM + CD + MP3 + Cổng kết nối AUX/USB
+                                                </th>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="style1" style="text-align: center;">
+                                                    AM/FM + MP3 + Cổng kết nối AUX/USB
+                                                </th>
+                                                <td class="style1">
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td class="style1">
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td class="style1">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Bluetooth
+                                                </th>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Điều khiển &acirc;m thanh tr&ecirc;n v&ocirc; lăng
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Gương chiếu hậu chỉnh điện
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Gương chiếu hậu gập điện
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Cửa sổ điều khiển điện
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Hệ thống kh&oacute;a cửa trung t&acirc;m
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Ch&igrave;a kh&oacute;a th&ocirc;ng minh + khởi động n&uacute;t bấm
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Chống sao ch&eacute;p ch&igrave;a kh&oacute;a (Immobilizer)
+                                                </th>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align: center;">
+                                                    Điều h&ograve;a nhiệt độ
+                                                </th>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                                <td>
+                                                    <span style="color: #666666; font-family: Arial, AppleGothic, sans-serif, Helvetica;
+                                                        font-size: xx-large; line-height: 20px; text-align: center;">&bull;</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                          </div>
+
+                        </div>      
+                    </div>                   
+                </div>
+                <div class="product-detail-bottom ">
+
+                            <div class="row product-view">
+                                <div class="col-2 col-sm-2 col-2 col-sm-2 col-md-2 product-view-item">
+                                    <a href="#" class="product-view-link">
+                                        <div class="product-view-img">
+                                            <img class="btn-img-1" src="images/product-detail/affix-cover.png" alt="" style="display: none;">
+                                            <img class="btn-img-active-1" src="images/product-detail/affix-cover-active.png" alt="" style="display: inlines;">
+                                        </div>
+                                        <p>Giới thiệu</p>
+                                    </a>
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-2 product-view-item">
+                                    <a href="#" class="product-view-link">
+                                        <div class="product-view-img">
+                                            <img class="btn-img-2" src="images/product-detail/affix-360.png" alt="" style="display: inline;">
+                                            <img class="btn-img-active-2" src="images/product-detail/affix-360-active.png" alt="" style="display:none">
+                                        </div>
+                                        <p>Cảm nhận 360</p>
+                                    </a>
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-2 product-view-item">
+                                    <a href="#" class="product-view-link">
+                                        <div class="product-view-img">
+                                            <img class="btn-img-3"  src="images/product-detail/affix-gallery.png" alt=""style="display: inline;">
+                                            <img class="btn-img-active-3" src="images/product-detail/affix-gallery-active.png" alt=""style="display:none">
+                                        </div>
+                                        <p>Hình ảnh</p>
+                                    </a>
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-2 product-view-item">
+                                    <a href="#" class="product-view-link">
+                                        <div class="product-view-img">
+                                            <img class="btn-img-4" src="images/product-detail/affix-review.png" alt=""style="display: inline;">
+                                            <img class="btn-img-active-4" src="images/product-detail/affix-review-active.png" alt=""style="display:none">
+                                        </div>
+                                        <p>Đánh giá xe</p>
+                                    </a>
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-2 product-view-item">
+                                    <a href="#" class="product-view-link">
+                                        <div class="product-view-img">
+                                            <img class="btn-img-5" src="images/product-detail/affix-spec.png" alt=""style="display: inline;">
+                                            <img class="btn-img-active-5" src="images/product-detail/affix-spec-active.png" alt=""style="display:none">
+                                        </div>
+                                        <p>Thông số xe</p>
+                                    </a>
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-2 product-view-item">
+                                    <a href="#" class="product-view-link">
+                                        <div class="product-view-img">
+                                            <img src="images/product-detail/affix-catalog.png" alt="">
+                                            <img src="" alt="">
+                                        </div>
+                                        <p>Tải catalog</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleControls" data-slide-to="0" class="active-img-1" onclick="activeimg();"></li>
+                                <li data-target="#carouselExampleControls" data-slide-to="1" class="active-img-2" onclick="activeimg2()"></li>
+                                <li data-target="#carouselExampleControls" data-slide-to="2" class="active-img-3" onclick="activeimg3()"></li>
+                                <li data-target="#carouselExampleControls" data-slide-to="3" class="active-img-4" onclick="activeimg4()"></li>
+                                <li data-target="#carouselExampleControls" data-slide-to="4" class="active-img-5" onclick="activeimg5()"></li>
+                                <li></li>
+                            </ol>
+                            
+                            <div class="row product-brand">
+                                <a href="#">
+                                    <img src="images/product-detail/GRAND-I10_logo.png" alt="" class="product-brand-img">
+                                </a>
+                            </div>
+            
+                            <div class="row product-nav">
+                                <ul class="product-nav-list">
+                                    <li class="product-nav-item">
+                                        <a href="#" class="product-nav-link active">Nổi bật</a>
+                                    </li>
+                                    <li class="product-nav-item">
+                                        <a href="#" class="product-nav-link">Ngoại thất</a>
+                                    </li>
+                                    <li class="product-nav-item">
+                                        <a href="#" class="product-nav-link">Nội thất</a>
+                                    </li>
+                                    <li class="product-nav-item">
+                                        <a href="#" class="product-nav-link">Vận hành</a>
+                                    </li>
+                                    <li class="product-nav-item">
+                                        <a href="#" class="product-nav-link">An toàn</a>
+                                    </li>
+                                    <li class="product-nav-item">
+                                        <a href="#" class="product-nav-link">Tiện nghi</a>
+                                    </li>
+                                </ul>
+                            </div>
                 </div>
 
-                <div class="product-detail-bottom ">
-                    <div class="grid-row product-view">
-                        <div class="grid-column-2 product-view-item">
-                            <a href="#" class="product-view-link">
-                                <div class="product-view-img">
-                                    <img class="btn-img" src="images/product-detail/affix-cover.png" alt="">
-                                    <!-- <img class="btn-img-active" src="images/product-detail/affix-cover-active.png" alt=""> -->
-                                </div>
-                                <p>Giới thiệu</p>
-                            </a>
-                        </div>
-                        <div class="grid-column-2 product-view-item">
-                            <a href="#" class="product-view-link">
-                                <div class="product-view-img">
-                                    <img class="" src="images/product-detail/affix-360.png" alt="">
-                                    <!-- <img class="" src="images/product-detail/affix-360-active.png" alt=""> -->
-                                </div>
-                                <p>Cảm nhận 360</p>
-                            </a>
-                        </div>
-                        <div class="grid-column-2 product-view-item">
-                            <a href="#" class="product-view-link">
-                                <div class="product-view-img">
-                                    <img src="images/product-detail/affix-gallery.png" alt="">
-                                    <!-- <img src="images/product-detail/affix-gallery-active.png" alt=""> -->
-                                </div>
-                                <p>Hình ảnh</p>
-                            </a>
-                        </div>
-                        <div class="grid-column-2 product-view-item">
-                            <a href="#" class="product-view-link">
-                                <div class="product-view-img">
-                                    <img src="images/product-detail/affix-review.png" alt="">
-                                    <!-- <img src="images/product-detail/affix-review-active.png" alt=""> -->
-                                </div>
-                                <p>Đánh giá xe</p>
-                            </a>
-                        </div>
-                        <div class="grid-column-2 product-view-item">
-                            <a href="#" class="product-view-link">
-                                <div class="product-view-img">
-                                    <img src="images/product-detail/affix-spec.png" alt="">
-                                    <!-- <img src="images/product-detail/affix-spec-active.png" alt=""> -->
-                                </div>
-                                <p>Thông số xe</p>
-                            </a>
-                        </div>
-                        <div class="grid-column-2 product-view-item">
-                            <a href="#" class="product-view-link">
-                                <div class="product-view-img">
-                                    <img src="images/product-detail/affix-catalog.png" alt="">
-                                    <img src="" alt="">
-                                </div>
-                                <p>Tải catalog</p>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="grid-row product-brand">
-                        <a href="#">
-                            <img src="images/product-detail/GRAND-I10_logo.png" alt="" class="product-brand-img">
-                        </a>
-                    </div>
-    
-                    <div class="grid-row product-nav">
-                        <ul class="product-nav-list">
-                            <li class="product-nav-item">
-                                <a href="#" class="product-nav-link active">Nổi bật</a>
-                            </li>
-                            <li class="product-nav-item">
-                                <a href="#" class="product-nav-link">Ngoại thất</a>
-                            </li>
-                            <li class="product-nav-item">
-                                <a href="#" class="product-nav-link">Nội thất</a>
-                            </li>
-                            <li class="product-nav-item">
-                                <a href="#" class="product-nav-link">Vận hành</a>
-                            </li>
-                            <li class="product-nav-item">
-                                <a href="#" class="product-nav-link">An toàn</a>
-                            </li>
-                            <li class="product-nav-item">
-                                <a href="#" class="product-nav-link">Tiện nghi</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
 
             </div>
         </div>
         
     </div>
+    
     <div class="content-detail">
         <div class="grid-content">
 
@@ -280,7 +1286,7 @@
                     </p>
                 </div>
                 <div class="content-images">
-                    <div class="grid-row">
+                    <div class="row">
                         <div class="grid-column-4">
                             <img src="images/product-detail/content/nb1.jpg" alt="" class="front-img"> 
                         </div>
@@ -305,7 +1311,7 @@
                     <div class="grid-column-12 content-images-item">
                         <img src="images/product-detail/content/nb5.jpg" alt="">
                     </div>
-                    <div class="grid-row content-images-item">
+                    <div class="row content-images-item">
                         <div class="grid-column-6">
                             <img src="images/product-detail/content/nb6.jpg" alt="">
                             <h3>Không gian chứa đồ rộng rãi</h3>
@@ -326,21 +1332,378 @@
                 </div>
 
             </div>
-            <div class="content-heading">
-                <span>NGOẠI THẤT</span>
+
+            <div class="content-item">
+                <div class="content-heading">
+                    <span>NGOẠI THẤT</span>
+                </div>
+                <div class="content-item-bg">                    
+                </div>
+                <div class="content-body">
+                    <h5>ẤN TƯỢNG TỪ CÁI NHÌN ĐẦU TIÊN</h5>
+                    <p>Mọi đường nét trên <strong>Grand i10</strong> đều để lại ấn tượng về sự cá tính, thời trang và phong cách </p>
+                    <div class="content-body-img">
+                        <img src="images/product-detail/ngoaithat1.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/nb2.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="col-sm-6">                        
+                            <img src="images/product-detail/nb3.jpg" alt="" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:15px;">
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/nb4.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="col-sm-6">                        
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-body">
+                    <h5>CHIẾC XE ĐÔ THỊ HÀNG ĐẦU</h5>
+                    <p>Sở hữu những đường nét thiết kế mạnh mẽ và đậm nét cá tính, Grand i10 2017 được nâng tầm đẳng cấp của một chiếc xe đô thị hàng đầu.</p>
+                    <div class="content-body-img">
+                        <img src="images/product-detail/ngoaithat2.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/nb5.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="col-sm-6">                        
+                            <img src="images/product-detail/nb6.jpg" alt="" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:15px;">
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/nb7.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="col-sm-6">                        
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-body">
+                    <h5>CHIẾC XE ĐÔ THỊ HÀNG ĐẦU</h5>
+                    <p>Sở hữu những đường nét thiết kế mạnh mẽ và đậm nét cá tính,<strong> Grand i10 2017</strong> được nâng tầm đẳng cấp của một chiếc xe đô thị hàng đầu.</p>
+                    <div class="content-body-img">
+                        <img src="images/product-detail/ngoaithat3.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/nb8.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="col-sm-6">                        
+                            <img src="images/product-detail/nb9.jpg" alt="" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:15px;">
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/nb10.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="col-sm-6">                        
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-bottom">
+                    <div class="row"style="margin-top:15px">
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/nb11.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Đèn sương mù</p>
+                                <p>Đèn sương mù của Grand i10 được đặt thấp ở phần cản trước, 
+                                    giúp tăng đảm bảo ánh sáng trong điều kiện vận hành có sương mù.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/nb12.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Hốc hút gió trước</p>
+                                <p>Hốc hút gió phía trước nhằm giảm đáng kể sức cản của gió đồng thời giảm 
+                                    nhiệt la-zăng, lốp, giúp tăng cường khả năng vận hành ổn định và an toàn.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/nb13.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Tay nắm cửa mạ Crom</p>
+                                <p>Tay nắm cửa mạ Crom trên Grand i10 tạo nên vẻ lịch lãm, sang trọng cho chiếc xe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/nb15.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Tấm phản quang phía sau</p>
+                                <p>Tấm phản quang đuôi xe được thiết kế mới, 
+                                    kết hợp cùng cản sau màu đen tạo nên vẻ nổi bật và mạnh mẽ cho Grand i10</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/nb16.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Gạt mưa kính sau</p>
+                                <p>Grand i10 được trang bị gạt mưa ở kính sau, 
+                                    giúp làm sạch tấm kính tăng khả năng quan sát của lái xe.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/nb17.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Đèn phanh trên cao</p>
+                                <p>Xe được trang bị đèn phanh trên cao dạng LED, giúp nhanh chóng cảnh báo 
+                                    cho phương tiện phía sau biết khi bạn thực hiện phanh, dừng trong khi lưu thông.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <div class="content-heading">
-                <span>NỘI THẤT</span>
+
+            <div class="content-item">
+                <div class="content-heading">
+                    <span>NỘI THẤT</span>
+                </div>
+                <div class="content-item-bg" style="background: url(http://hyundaibacninh.vn/tempfiles/uploads/ChiTietXe/Grandi10-2017/noithat/noi11.png) no-repeat fixed 50% 50% #fff;">                    
+                </div>
+                <div class="content-body">
+                    <h5>KHÔNG GIAN NỘI THẤT ẤN TƯỢNG</h5>
+                    <p><strong>Grand i10</strong> sở hữu không gian nội thất rộng rãi, kết hợp cùng phong cách thiết kế cá tính với 
+                        những màu sắc trẻ trung tạo nên vẻ ấn tượng không thể trộn lẫn.</p>
+                </div>
+                <div class="content-body-img">
+                    <img src="images/product-detail/noi2.jpg" alt="">
+                </div>
+
+                <div class="content-body">
+                    <h5>TIỆN NGHI HÀNG ĐẦU</h5>
+                    <p>Grand i10 sở hữu những tính năng tiện ích cao cấp hàng đầu phân khúc,
+                        giúp đáp ứng những đòi hỏi khắt khe nhất của chủ sở hữu.</p>
+                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/noi3.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="col-sm-6">                        
+                            <img src="images/product-detail/noi4.jpg" alt="" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:15px;">
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/noi5.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="col-sm-6">                        
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-bottom">
+                    <div class="row"style="margin-top:15px">
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/noi6.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Đèn sương mù</p>
+                                <p>Đèn sương mù của Grand i10 được đặt thấp ở phần cản trước, 
+                                    giúp tăng đảm bảo ánh sáng trong điều kiện vận hành có sương mù.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/noi7.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Hốc hút gió trước</p>
+                                <p>Hốc hút gió phía trước nhằm giảm đáng kể sức cản của gió đồng thời giảm 
+                                    nhiệt la-zăng, lốp, giúp tăng cường khả năng vận hành ổn định và an toàn.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/noi8.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Tay nắm cửa mạ Crom</p>
+                                <p>Tay nắm cửa mạ Crom trên Grand i10 tạo nên vẻ lịch lãm, sang trọng cho chiếc xe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content-heading">
-                <span>VẬN HÀNH</span>
+
+            <div class="content-item">
+
+                <div class="content-heading">
+                    <span>VẬN HÀNH</span>
+                </div>
+                <div class="content-item-bg" style="background: url(http://hyundaibacninh.vn/tempfiles/uploads/ChiTietXe/Grandi10-2017/vanhanh/v1.jpg) no-repeat fixed 50% 50% #fff">                    
+                </div>
+                 
+                <div class="content-body">
+                    <h5>KHẢ NĂNG VẬN HÀNH XUẤT SẮC</h5>
+                    <p>Grand i10 được tối ưu với hệ thống khung gầm, động cơ, hộp số đem đến khả năng vận hành xuất sắc, 
+                        cân bằng giữa những yếu tố bền bỉ và tiết kiệm.</p>
+                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/noi3.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="col-sm-6">                        
+                            <img src="images/product-detail/v2.jpg" alt="" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:15px;">
+                        
+                    </div>
+                </div>
+
+                <div class="content-bottom">
+                    <div class="row"style="margin-top:15px">
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/v4.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Hộp số sàn</p>
+                                <p>Gồm 5 cấp số với các bước chuyển số được tinh chỉnh làm tăng khả năng phản 
+                                    ứng và sự nhạy bén khi di chuyển, đồng thời giúp tiết kiệm nhiên liệu tối đa.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/v5.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Hộp số tự động</p>
+                                <p>Gồm 4 cấp số đảm bảo sự kết hợp hoàn hảo giữa tính năng vận hành mạnh mẽ, 
+                                    tiết kiệm nhiên liệu cùng sự bền bỉ bằng các công nghệ tiên tiến nhất như 
+                                    van điện từ và bộ chuyển đổi momen xoắn phẳng.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/v6.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Đồng hồ hiển thị cấp số</p>
+                                <p>Đồng hồ điện tử hiện thị cấp số hiện hành giúp bạn chủ động trong việc điều khiển xe hơn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content-heading">
-                <span>AN TOÀN</span>
+
+            <div class="content-item">
+                <div class="content-heading">
+                    <span>AN TOÀN</span>
+                </div>
+                <div class="content-item-bg" style="background: url(/images/product-detail/an1.jpg) no-repeat fixed 50% 50% #fff">                    
+                </div>
+
+                <div class="content-body">
+                    <h5>CÔNG NGHỆ AN TOÀN HÀNG ĐẦU</h5>
+                    <p>Grand i10 sở hữu không gian nội thất rộng rãi, kết hợp cùng 
+                        phong cách thiết kế cá tính với những màu sắc trẻ trung tạo nên vẻ ấn tượng không thể trộn lẫn.</p>
+                    
+                    <div class="row" >
+                        <div class="col-sm-6">
+                            <p style="color:black;font-size: 18px;">Túi khí đôi</p>
+                            <p>Grand i10 hoàn toàn làm hài lòng những người khó tính nhất bằng công nghệ an toàn chủ động 
+                                với túi khí 
+                                dành cho lái xe và hành khách, giúp đảm bảo an toàn tránh chấn thương trong trường hợp 
+                                va chạm.
+                            </p>    
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/an2.jpg" alt="" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="images/product-detail/an3.jpg" alt="" style="width:97%;margin-left:15px;">
+                    </div>                 
+                </div>
+
+                <div class="content-bottom">
+                    <div class="row"style="margin-top:15px">
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/an4.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Hộp số sàn</p>
+                                <p>Gồm 5 cấp số với các bước chuyển số được tinh chỉnh làm tăng khả năng phản 
+                                    ứng và sự nhạy bén khi di chuyển, đồng thời giúp tiết kiệm nhiên liệu tối đa.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/an5.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Hộp số tự động</p>
+                                <p>Gồm 4 cấp số đảm bảo sự kết hợp hoàn hảo giữa tính năng vận hành mạnh mẽ, 
+                                    tiết kiệm nhiên liệu cùng sự bền bỉ bằng các công nghệ tiên tiến nhất như 
+                                    van điện từ và bộ chuyển đổi momen xoắn phẳng.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/an6.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Đồng hồ hiển thị cấp số</p>
+                                <p>Đồng hồ điện tử hiện thị cấp số hiện hành giúp bạn chủ động trong việc điều khiển xe hơn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content-heading">
-                <span>TIỆN NGHI</span>
+            <div class="content-item">
+                <div class="content-heading">
+                    <span>TIỆN NGHI</span>
+                </div>
+
+                <div class="content-body">
+                    <h5>NHỮNG CÔNG NGHỆ ĐỈNH CAOTÍCH HỢP TRONG MỘT CHIẾC XE NHỎ GỌN</h5>
+                    <p>Những chuyến hành trình của bạn sẽ trở nên thú vị hơn với những công nghệ tiện ích được trang bị bên trong Grand i10</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/tien2.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="images/product-detail/tien3.jpg" alt="" style="width:100%">
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="content-bottom">
+                    <div class="row"style="margin-top:15px">
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/an4.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Chìa khóa thông minh & Khởi động nút bấm</p>
+                                <p>Chìa khóa thông minh giúp chủ xe có thể dễ dàng vào trong xe với chỉ một nút bấm trên tay nắm cửa. Nút khởi động 
+                                    Start/Stop Engine giúp việc khởi động hoặt tắt máy đơn giản hơn bao giờ hết với chỉ 1 nút bấm.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/an5.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Khay để đồ phía sau</p>
+                                <p>Khay để đồ phía sau giúp bạn thuận tiện để vật dụng cá nhân</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/an6.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Đèn chiếu sáng cốp</p>
+                                <p>Cốp xe Grand i10 được trang bị đèn chiếu sáng, giúp bạn dễ dàng lấy hoặc sắp đặt hành lí trong điều kiện ánh sáng không tốt hoặc vào ban đêm.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/product-detail/an6.jpg" alt="">
+                            <div class="content-bottom-text">
+                                <p>Vô lăng chỉnh hướng</p>
+                                <p>Vô lăng của Hyundai Grand i10 có khả năng điều chỉnh 4 hướng, giúp người lái dễ dàng tìm được tư thế thỏa mái nhất. Tay lái của xe cũng được tích hợp nút điều khiển chức năng làm tăng tính tiện nghi, an toàn và thuận tiện.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 
@@ -369,17 +1732,15 @@
     </div>
 
     <div class="phone">
-        <div class="phone-animation">
-            <div class="phone-circle"></div>
-            <div class="phone-ring">
-                <a href="tel:1900 988 978">
-                    <img src="images/phone-ring.png" alt="" class="phone-img">
-                </a>
-            </div>
-        </div>
-        <div>
-            <p class="phone-number">1900 988 978</p>
-        </div>
+        <a href="">
+          
+          <!-- <div class="quick-alo-ph-circle-fill"></div> -->
+          <div class="phone-number">
+            <div class="quick-alo-ph-img-circle"></div>
+            <span>1900 988 978</span> 
+          </div>
+          <div class="quick-alo-ph-circle"></div>
+        </a>
     </div>
 
     <div class="top-page">
@@ -389,8 +1750,37 @@
     </div>
 
     <div class="box-chat">
-                <img src="images/boxchat-icon.png" alt="">
-                <span>Chat với chúng tôi</span>
+        <div class="chat-heading">
+            <img src="images/boxchat-icon.png" alt="">
+            <span id="chat" onclick="openChat()">Chat với chúng tôi</span>
+            <button type="button" class="close-chat" id="close" onclick="closeChat()"> x</button>
+        </div>       
+        <div class="box-chat-popup" id="show-chat" >
+            <div class="text-area">
+                <div class="text-box">
+                    <p>
+                        <input type="text "placeholder="Mời bạn nhập tên">
+                    </p>
+                </div>
+                <div class="text-box">
+                    <p>
+                        <input type="text "placeholder="Mời bạn nhập Email">
+                    </p>
+                </div>
+                <div class="text-box">
+                    <p>
+                        <input type="text "placeholder="Mời bạn nhập số điện thoại">
+                    </p>
+                </div>
+                <div class="text-box"> 
+                    <p>
+                        <textarea class="question" type="text "placeholder="Mời bạn nhập câu hỏi?"></textarea>
+                    </p>
+                </div>
+                <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+            </div>
+            
+        </div>
     </div>
     <!--fixed element-->
 
@@ -407,7 +1797,7 @@
     <footer class="footer">
         <div class="footer-top">
             <div class="grid">
-                <div class="grid-row">
+                <div class="row">
                     <div class="grid-column-3">
                         <img src="images/daily-logo-footer.png" alt="" class="footer-logo">
                         <div class="footer-description">
@@ -476,7 +1866,7 @@
                     </div>
                 </div>
     
-                <div class="grid-row footer-item">
+                <div class="row footer-item">
                     <div class="grid-column-4">
                         <div class="footer-info">
                             <img src="images/icon-market.svg" alt="" class="footer-mark">

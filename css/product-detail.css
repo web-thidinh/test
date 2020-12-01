@@ -5,12 +5,16 @@ body{
 .main-content{
 
 }
+.header{
+ 
+}
 .content-bg{
     width:100%;
+    overflow: hidden;
     height:500px;
     position: absolute;
 }
-.content-bg img{
+.content-bg img{  
     position: absolute;
     top:0;
     left:-285px;
@@ -20,18 +24,59 @@ body{
     width:100%;
     margin-top:75px;
     position: relative;
- 
+}
+.product-detail-top{
+    width:100%;
+    display: flex;
+}
+.product-detail-bottom{
+    position: relative;
+}
+.carousel{
+    width:100%;
+}
+.carousel-item{
+    width:100%;
+    height:350px;
+}
+.carousel-indicators{
+    width:100%;
+    margin:0;
+    top:0;
+    height:80px;
+    z-index: 9999999 !important;
+}
+.carousel-indicators li{
+    width:16.6667%;
+    height:100%;
+    margin:0;
+    border:0;
+    background-color: gray;
+    opacity: 0;
+}
+.carousel-indicators li.active {
+    opacity: 0;
+}
+/* .carousel-indicators li.active .btn-img{
+ display:inline;
+} */
+.carousel-indicators li.active .product-view-img
+.product-detail-bottom{
+    width:970px;
+
 }
 .product-show{
-    
+    width: 100%;
+  
 }
+/* product intro */
 .name{
     font-size: 2.8rem;
     margin:0;
     color:#333;
 }
 .product-description{
-    padding-top:60px;
+
 }
 .product-slogan{
     margin-top:15px;
@@ -62,21 +107,140 @@ body{
 .product-detail-image img{
     width:100%;
 }
+/* ------ */
+
+/* product-experience */
+.product-experience{
+
+}
+.pano_loading_start{
+    position: absolute;
+    top:90px;  
+    left: 320px;
+    text-align: center; 
+    width:90px; 
+    height:90px;
+}
+.product-experience-images>p{
+    text-align: center;
+    font-size: 1.5rem;
+    color:#3076b7;
+    font-weight: bold;
+    margin-top:20px;
+}
+
+.color-view{
+    color:#595959;
+    font-weight: bold;
+    line-height: 16px;
+    font-size: 14px;
+}
+.color-list{
+    padding-left:0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-experience-images div{
+
+}
+.carousel-control-prev,.carousel-control-next{
+    top:50% !important;
+    bottom:50px  !important;
+    width:10px;
+}
+.product-experience-color{
+    padding-top:70px;
+}
+.product-experience-color p{
+
+}
+.product-experience-color p img{
+    width:16px;
+    height:16px;
+}
+.nav-tabs .nav-item{
+
+}
+.carousel-img{
+    height:350px;
+    overflow: auto;
+}
+.carousel-img>div{
+    width:100%;
+    overflow: hidden;
+    height:auto;
+}
+.tab-content{
+    margin-top:20px;
+    width:100%;
+}
+.tab-content-item img{
+    width:100%;
+}
+.nav-tabs{
+    width:100%;
+    margin-left:50px;
+}
+.nav-tabs .nav-link{
+    font-size: 14px;
+    border:none;
+    color:#337ab7;
+    font-weight: bold;
+}
+.nav-tabs .nav-link.active{
+    color:#df6a0e;
+    background-color: transparent;
+}
+/*------*/
+
 .fix-detail{
     position: fixed;
     top:0;
+    width:100%;
+    max-width:970px;
     z-index: 1000;
     padding-left:15px;
     padding-right: 15px;
     background-color: white;
     box-shadow: 0 0 6px #ccc;
 }
-
-.product-detail-bottom{
+.fix-carousel{
+    position: absolute;
     width:970px;
+    top:0;
 }
+
+/* product-technical */
+.product-technical{
+    height:350px;
+    overflow: auto;
+}
+.frame{
+    width:100%;
+    overflow: hidden;
+    height:auto;
+}
+table{
+    overflow: auto;
+    border-spacing: 2px;
+    border-color:gray;
+}
+thead tr{
+    width:100%;
+    display: table-row;
+}
+table th{
+    font-size: 13px;
+    color:#333;
+    padding: 8px 0 11px 0;
+    font-weight: bold;
+    line-height: 20px;
+}
+/*------*/
 .product-view{
-    padding-top:10px;
+   margin-top:10px;
 }
 .product-view-item{
 
@@ -120,7 +284,7 @@ body{
 .product-nav-link{
     color:#337ab7;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-decoration:none;
 }
 .product-nav-link.active{
@@ -128,23 +292,59 @@ body{
 }
 
 /* CONTENT */
+.content-detail{
 
+}
 .content-item{
-
+    width:100%;
 }
 .content-heading{
     margin-top:20px;
     text-align: center;
+    margin-bottom: 60px;
 }
 .content-heading span{
     color:#0E528B;
     font-size: 3.2rem;
     padding:8px 18px;
-
     border-bottom: 3px solid #0E528B;
 }
+.content-item-bg{
+    position: relative;
+    width:100%;
+    height:520px;
+    margin:auto;
+    background-image: url(http://hyundaibacninh.vn/tempfiles/uploads/ChiTietXe/Grandi10-2017/ngoaithat/nb1.jpg);
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 75%;
+}
+.content-body{
+    margin-top:20px;
+    text-align: center;
+}
+.content-body h5{
+    font-size: 26px;
+}
+.content-body p{
+    font-size: 16px;
+    color:#666;
+}
+.content-bottom img{
+    width:100%;
+}
+.content-bottom-text p:first-child{
+    color:#333;
+}
+.content-bottom-text p{
+    font-size: 1.6rem;
+    color:#656565;
+}
+.content-body-img img{
+    width:100%;
+}
 .content-text{
-    margin-top:60px;
     text-align: center;
 }
 .content-text h2{
@@ -192,4 +392,50 @@ body{
 }
 .content-images .front-img{
     width:100%;
+}
+
+@media (max-width:1024px){
+    .product-detail{
+        margin-top:30px;
+    }
+    .product-description{
+        text-align: center;
+    }
+    .product-detail-top{
+        height:auto;
+    }
+    
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (min-width:768px){
+    .product-detail{
+        width:100%;
+    }
+}
+@media (max-width:768px){
+    .product-detail{
+        width:100%;
+    }
+    .carousel-item{
+        height:auto;
+    }
+    .product-experience-color{
+        padding-top:30px;
+       padding-left: 30px;
+    }
+    .experience_option{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .color-view{
+        margin-right:15px;
+    }
+    .color-list{
+        flex-direction: row;
+    }
 }
