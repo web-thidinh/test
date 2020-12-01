@@ -665,7 +665,7 @@ a:hover{
 /* Email user */
 .email-user{
     padding:30px 30px;
-    background: url(/images/bg-regis.jpg);
+    background: url(/test/images/bg-regis.jpg);
 }
 .email-user-content{
     margin:auto;
