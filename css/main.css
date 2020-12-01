@@ -665,7 +665,7 @@ a:hover{
 /* Email user */
 .email-user{
     padding:30px 30px;
-    background-image: url(http://webdemo.netdeal.vn:12071/Images/bg-regis.jpg);
+    background: url(/images/bg-regis.jpg);
 }
 .email-user-content{
     margin:auto;
