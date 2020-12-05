@@ -12,5 +12,12 @@
     margin-left: 15px;
 }
 strong{
-    color:
+    color:;
+}
+
+@media (max-width:768px){
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

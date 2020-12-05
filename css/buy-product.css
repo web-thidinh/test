@@ -1,0 +1,80 @@
+.buy-product-top{
+    margin-top:30px;
+}
+.product-top-item{
+    text-align: center;
+    line-height: 60px;
+}
+.product-top-item a{
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+.product-top-item a.active{
+    color:#064A83;
+}
+.export{
+    margin-top:40px;
+    font-size: 18px;
+    text-align: center;
+}
+.export a{
+    padding:10px 10px;
+    border:1px solid #c2bfbf ;
+}
+.export a:hover{
+    color:white;
+    background-color: #D56A10;
+}
+
+.price-list{
+    margin-top:70px;    
+}
+.price-list-top{
+    text-align: center;
+}
+.price-list-top a{
+    font-size: 20px;
+    border-radius: 0;
+    padding:5px 10px;
+    
+    border-color: #2e6da4;
+}
+.btn-price{
+    background-color: #337ab7;
+}
+.price-list-top .btn:hover{
+    background-color: #D56A10;
+    border-color: #D56A10;
+}
+.btn-regist{
+    color: #034A84;
+    background-color: #fff;
+    border-color: #034A84;
+}
+.price-top-left{
+    text-align: center;
+}
+.price-top-right{
+    text-align: center;
+}
+.price-list-bottom{
+    margin-top:20px;
+    border:1px solid #a3a3a3;
+}
+.price-bottom-item{
+    border-bottom:1px solid #a3a3a3;
+    padding:30px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+.price-bottom-item .version-name{
+    color:#333;
+}
+.price-bottom-item .version-price{
+    color:red;
+}

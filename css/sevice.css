@@ -1,0 +1,60 @@
+.sevice-list{
+    margin-top:20px;
+}
+.sevice-item{
+    text-align: center;
+    
+}
+.sevice-item p{
+    
+
+}
+.sevice-item.active{
+    
+}
+.box-sevice{
+    display: block;    
+    border:1px solid #dcdbdb; 
+}
+.box-sevice.active{
+    box-shadow: 5px 5px 5px #968982;
+}
+.box-sevice p{
+    color:#055da7;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom:20px;
+}
+.box-sevice img{
+    height:60px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.sevice-heading{
+    margin-top:30px;
+    text-align: center;
+}
+.sevice-heading p{
+    color:#034983;
+    font-size: 25px;
+}
+.sevice-heading hr{
+    width:30px;
+    border-top: 3px solid #034983;
+}
+.sevice-info{
+    padding:20px 15px;
+}
+.sevice-info p{
+    color:#333;
+    font-weight: bold;
+    font-size: 15px;
+}
+@media (max-width:992px)
+{
+    .row{
+        margin-left:0;
+        margin-right: 0;
+    }
+}

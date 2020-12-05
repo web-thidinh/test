@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="./bootstrap4/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="bootstrap4.5.3/css/bootstrap.css"> <!--bootstrap css-->
     <script src="jquery/jquery-3.5.1.min.js"></script>                  <!--jquery-->
-    <script src="bootstrap4.5.3/js/bootstrap.min.js"></script>          <!--bootstrap js-->
+    <script src="bootstrap4.5.3/js/bootstrap.min.js"></script>          <!--bootstrap js-->  
     <link rel="stylesheet" href="css/main.css">  
     <script src="mainjs.js" ></script>
 </head>
@@ -413,7 +413,16 @@
                     <div class="grid-column-3">
                         <h5 class="footer-heading">Hình ảnh</h5>
                         <div class="footer-description">
-    
+                            <ul class="footer-images">
+                                <li class="images-item">
+                                    <a href="#">
+                                        <img src="images/Gioi-thieu-showroom.jpg" style="width:100%;" alt="">                                       
+                                    </a> 
+                                    <div class="overlay" onclick="overlay();">
+                                        <i class="fas fa-plus"></i>
+                                    </div>                             
+                                </li>
+                            </ul> 
                         </div>
                     </div>
                     <div class="grid-column-3">
@@ -439,7 +448,7 @@
                                     </a>
                                 </li>
                                 <li class="news-item">
-                                    <a href="#" class="news-link">
+                                    <a href="" class="news-link">
                                         <img src="images/footer-img/footer-img3.jpg" alt="ROADSHOW THÁNG 05 CÙNG HYUNDAI AN PHÚ" class="news-img">
                                         <div class="news-body">
                                             <h5 class="news-title">🔥 KHỞI SẮC ROADSHOW THÁNG 06 TẠI HYUNDAI AN PHÚ 🔥</h5>
@@ -484,6 +493,17 @@
             Copyright ©idocNet 2018
         </div>
     </footer>
+
+
+    <div class="cover-layer" id="overlayshow">       
+        <div class="cover-body">
+            <img src="images/Gioi-thieu-showroom.jpg" style="width:100%;height:100%;" alt="">           
+            <i class="far fa-times-circle  close-layer" onclick="closelayer();"></i> 
+        </div> 
+        <div class="over-layer">
+        </div>       
+    </div>
+
 
 </body>
 

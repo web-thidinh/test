@@ -144,5 +144,11 @@ for(var i = 1;i<6;i++){
 
 }
 
+function overlay(){   
+    document.getElementById('overlayshow').style.display = 'block';  
+};
 
+function closelayer(){
+    document.getElementById('overlayshow').style.display =  "none";
+};
 

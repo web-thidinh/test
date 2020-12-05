@@ -69,9 +69,7 @@ a{
 .navbar-collapse{
     width:100%;
 }
-.navbar-toggler-icon{
 
-}
 .header-phone{
     display: none;
     text-align: center;
@@ -278,9 +276,7 @@ a:hover{
     right:0;
     top:38%;
 } 
-.sevice-item{
 
-}
 .sevice-link{
     display: block;
     padding:10px 20px;
@@ -592,6 +588,7 @@ a:hover{
     position: fixed;
     width:300px;
     right: 0;
+    z-index: 100;
     bottom:0;
     background-color:rgb(80,178,229) ;
 }
@@ -775,6 +772,79 @@ a:hover{
     height:200px;
 }
 
+.footer-images{
+    width:45%;
+    margin-top:30px;
+    padding:0;
+   list-style: none;
+}
+.images-item{
+    position: relative;
+}
+.images-item:hover .overlay{
+    display: block;
+}
+.overlay{
+    display: none;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    cursor: pointer;
+    right:0;
+    left:0;
+    bottom:0;
+    border:2px solid white;
+    background-color: rgba(0,0,0,0.5);
+}
+.overlay i{
+    position: absolute;
+    color:white;
+    left:45%;
+    top:40%;
+}
+
+.cover-layer{  
+    position: fixed;
+    display: flex;
+    display: none;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+       
+    z-index: 100;
+}
+.over-layer{  
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+}
+.cover-body{ 
+    position: relative;
+    margin:auto;
+    top:30px;
+    bottom:30px;
+    width:85%;
+    height:80%;
+    padding:20px;
+    background-color: white; 
+    z-index: 300;
+}
+.close-layer{
+    position: absolute;
+    cursor: pointer;
+    top: -18px;
+    right: -19px;
+    font-size: 33px;
+    color:white;
+    border-radius: 20px;
+    background-color: black;
+    z-index: 40000;
+}
 
 /* RESPONSIVE */
 

@@ -1,0 +1,89 @@
+.regist-heading{
+    margin-top:30px;
+}
+.regist-heading p{
+    text-align: center;
+    font-size: 25px;
+    color:#034983;
+}
+.regist-heading hr{
+    width:30px;
+    border-top:3px solid #034983;
+}
+.regist-body{
+   
+    
+}
+
+.form-regist{
+    width:100%;
+}
+.comment{
+    margin-top:30px;
+    font-size:15px ;   
+}
+.comment textarea{
+    width:100%;
+}
+.regist-body{
+    margin-top:40px;
+}
+.btn-regist{
+    padding:12px 17px;
+    color:white;
+    font-size: 15px;
+    background-color: #034A84;
+}
+.btn-regist:hover{
+    background-color: #D56A10;
+}
+.head-title{
+    font-size: 15px;
+}
+.list-option{
+
+}
+.list-product-btn{
+    height:50px;
+    font-size: 15px;
+    font-weight: bold;
+    color:#333;
+    outline: none;
+    border:1px solid black;
+   background-color: white;
+}
+.dropdown-product{
+    display: none;
+    width:50%;
+    padding:0;
+    list-style: none;
+    border:1px solid #ccc;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.dropdown-product-list{
+    height:40px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+.dropdown-product-list:hover{
+    background-color: #f57508;
+}
+.dropdown-product-list img{
+    width:35%;
+    
+}
+.form-regist{
+    height:50px;
+    margin-top:15px;
+    font-size: 15px;
+    border:none;
+    outline: none;
+    border-bottom:2px solid #c5c3c3;
+}
+@media (max-width:1200px){
+    .row{
+        margin-left:0;
+        margin-right: 0;
+    }
+}

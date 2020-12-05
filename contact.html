@@ -15,6 +15,7 @@
     <script src="bootstrap4.5.3/js/bootstrap.min.js"></script>          <!--bootstrap js-->
     <link rel="stylesheet" href="css/main.css">  
     <script src="mainjs.js" ></script>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <header class="header">
@@ -211,6 +212,162 @@
         </div>
     </header>
     
+    <div class="contact-img">
+        <img src="images/sevice/CSKH.jpg"style="width:100%;" alt="">
+    </div>
+    <div class="contact-address">
+        <div class="grid-content">
+            <h1>HYUNDAI AN PHÚ</h1>
+            <p>
+                Showroom 2S: 1052 Nguyễn Văn Linh, P.Tân Phong, Quận 7, TP.HCM <br><br>
+    
+                Showroom 1S: 5A Nguyễn Thị Minh Khai, P.Bến Nghé, Quận 1, TP.HCM <br><br>
+    
+                Hotline: 098 134 1111 <br><br>
+    
+                Email: <strong style="color:#337ab7;">info@anphuhyundai.com.vn</strong> 
+            </p>
+        </div>
+    </div>
+
+    <div id="addressmap" style="height:500px;">
+
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2-M7hBioegHxYDb-DOmT4skLW2w_TRk4&callback=initialize">
+    </script>
+    <script>
+    // Initialize and add the map
+
+
+    var map;
+
+    function initialize() {
+    var mapOptions = {
+    zoom: 12,
+    center: new google.maps.LatLng(10.7881829, 106.7014151, 17),
+    };
+    var latlng1 = new google.maps.LatLng(10.72917, 106.7040359, 19);
+    var title1 = '<span style="font-family:\'Roboto\';"><strong>Showroom 2S</strong></span><br /><span style="font-family:\'Roboto\';">1052 Nguyễn Văn Linh, P.Tân Phong, Quận 7, TP.HCM</span>';
+    var latlng2 = new google.maps.LatLng(10.7881829, 106.7014151, 17);
+    var title2 = '<span style="font-family:\'Roboto\';"><strong>Showroom 1S</strong></span><br /><span style="font-family:\'Roboto\';">5A Nguyễn Thị Minh Khai, P.Bến Nghé, Quận 1, TP.HCM</span>';
+    map = new google.maps.Map(document.getElementById('addressmap'),
+    mapOptions);
+
+    createMarkerMaps(latlng1, title1);
+    createMarkerMaps(latlng2, title2);
+    }
+    function createMarkerMaps(latlng, html) {
+
+    var marker = new google.maps.Marker({
+    position: latlng,
+    map: map,
+    zIndex: Math.round(latlng.lat() * -100000) << 5
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+    content: html
+    });
+    infowindow.open(map, marker);
+    google.maps.event.addListener(marker, 'click', function () {
+    infowindow.setContent(html);
+    infowindow.open(map, marker);
+    });
+    // gmarkers.push(marker);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <!-- <script>
+        function initMap() {
+            var myOptions = {
+                zoom: 15,
+                center: new google.maps.LatLng(10.789124176141204, 106.70409023311127),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };           
+            map = new google.maps.Map(document.getElementById('addressmap'), myOptions);          
+            marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(10.789124176141204, 106.70409023311127)
+            });
+
+
+            var myOptions1 = {
+                zoom: 15,
+                center: new google.maps.LatLng(10.808054577485812, 106.75603092553582),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById('addressmap'), myOptions1);
+            marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(10.808054577485812, 106.75603092553582)
+            });
+
+
+            
+            infowindow = new google.maps.InfoWindow({
+                content: '<img src="<?php echo get_template_directory_uri() ?>/images/logo-vn4u.png" alt="" style="width:90px; "><div>Hyundai An Phú</div>'
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+            });
+            infowindow.open(map, marker);
+        }
+        google.maps.event.addDomListener(window, 'load', initMap);
+      
+      
+     </script>
+     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2-M7hBioegHxYDb-DOmT4skLW2w_TRk4&callback=initMap">
+     </script> -->
+
+    <div class="form-contact">
+        <div class="container">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="col-md-6 form-left">
+                        <div class="row form-item">
+                            <div class="col-md-3 form-title">Họ tên</div>
+                            <input type="text" class="col-md-9" placeholder="Nhập họ tên">
+                        </div>
+                        <div class="row form-item">
+                            <div class="col-md-3 form-title">Số điện thoại</div>
+                            <input type="text" class="col-md-9" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div class="row form-item">
+                            <div class="col-md-3 form-title">Email</div>
+                            <input type="text" class="col-md-9" placeholder="Nhập email">
+                        </div>
+                        <div class="row form-item">
+                            <div class="col-md-3 form-title">Địa chỉ</div>
+                            <input type="text" class="col-md-9" placeholder="Nhập địa chỉ">
+                        </div>                       
+                    </div>
+                    <div class="col-md-6 form-right">
+                        <div class="row form-item">
+                            <div class="col-md-3 form-title">Tiêu đề</div>
+                            <input type="text" class="col-md-9" placeholder="Nhập tiêu đê">
+                        </div>
+                        <div class="row form-item">
+                            <div class="col-md-3 form-title">Nội dung</div>
+                            <textarea name="" class="col-md-9" placeholder="Nhập nội dung" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-bottom">
+                        <div class="row form-item">  
+                            <div class="col-md-3 form-title"></div>
+                            <div class="col-md-9" style="padding-left:0;">
+                                <input type="submit" value="Gửi" class="btn btn-contact" placeholder="Nhập địa chỉ">
+                            </div>                         
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <!--fixed element-->
     <div class="social-link">
         <div class="social-icon">

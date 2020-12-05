@@ -10,11 +10,17 @@
     <link rel="stylesheet" href="fonts/fontawesome-free-5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/base.css">
     <!-- <link rel="stylesheet" href="./bootstrap4/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="bootstrap4.5.3/css/bootstrap.css"> <!--bootstrap css-->
-    <script src="jquery/jquery-3.5.1.min.js"></script>                  <!--jquery-->
-    <script src="bootstrap4.5.3/js/bootstrap.min.js"></script>          <!--bootstrap js-->
     <link rel="stylesheet" href="css/main.css">  
     <script src="mainjs.js" ></script>
+    <link rel="stylesheet" href="css/regist.css">
+    
+    <script src="jquery/jquery-3.5.1.min.js"></script>                  <!--jquery-->
+    <script src="bootstrap4.5.3/js/bootstrap.min.js"></script>          <!--bootstrap js-->
+    <link rel="stylesheet" href="bootstrap4.5.3/css/bootstrap.css"> <!--bootstrap css-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   
+
 </head>
 <body>
     <header class="header">
@@ -211,6 +217,100 @@
         </div>
     </header>
     
+    <div class="regist-heading">
+        <p>ĐĂNG KÝ LÁI THỬ</p>
+        <hr>
+    </div>
+
+    <div class="regist-body">
+        <div class="grid-content">
+            <div class="row">
+                <div class="col-xl-6">
+                    <p class="head-title">Thông tin khách hàng</p>
+                    <input type="text" placeholder="Họ tên" class="form-regist" name="Name">
+                    <input type="text" placeholder="Di động" class="form-regist" name="Phone">
+                    <input type="text" placeholder="Email" class="form-regist" name="Email">
+                    <input type="text" placeholder="Địa chỉ" class="form-regist" name="Address">
+                </div>
+                <div class="col-xl-6">
+                    <p class="head-title" style="margin-bottom:25px;">Lựa chọn dòng xe</p>
+                    <div class="list-option">
+                        <button class="list-product-btn" type="button" onclick="dropdown();">
+                            Chọn xe
+                            <i class="fas fa-sort-down"></i>
+                        </button>
+                        <ul class="dropdown-product">
+                            <li class="dropdown-product-list" onclick="a();">
+                                <img src="images/regist/grand-i10_RE.png" alt="">
+                                Grand i10
+                            </li>
+                            <li class="dropdown-product-list">
+                                <img src="images/regist/grand-i10-sedan_RE.png" alt="">
+                                Grand i10 sedan
+                            </li>
+                            <li class="dropdown-product-list">
+                                <img src="images/regist/tucson_RE.png" alt="">
+                                Tucson
+                            </li>
+                            <li class="dropdown-product-list">
+                                <img src="images/regist/new-santa-fe_RE.png" alt="">
+                                New Santa Fes
+                            </li>
+                            <li class="dropdown-product-list">
+                                <img src="images/regist/elantra_RE.png" alt="">
+                                Elantra 2019
+                            </li>
+                            <li class="dropdown-product-list">
+                                <img src="images/regist/elantra-sport_RE.png" alt="">
+                                Elantran Sport
+                            </li>
+                            <li class="dropdown-product-list">
+                                <img src="images/regist/accent_RE.png" alt="">
+                                Accent
+                            </li>
+                            <li class="dropdown-product-list">
+                                <img src="images/regist/kona_RE.png" alt="">
+                                Kona
+                            </li>
+                            <li class="dropdown-product-list">
+                                <img src="images/regist/solati_RE.png" alt="">
+                                Solati
+                            </li>                           
+                            <li class="dropdown-product-list">
+                                <img src="images/regist/limousine_RE.png" alt="">
+                                Limousine An Phú
+                            </li>
+                        </ul>
+                    </div>
+                    <script type="text/javascript">
+                        function dropdown(){
+                            document.querySelector('.dropdown-product').style.display = 'block';
+                        }
+                        // for(var i = 1;i<= document.querySelectorAll('.dropdown-product-list').length;i++){
+                        //     document.getElementsByClassName('.dropdown-product-list:')
+                        // }
+                        function a(){
+                            var abc = document.getElementsByClassName('.dropdown-product-list:first-child').innerHTML;                          
+                            document.getElementsByClassName('.list-product-btn').innerHTML = abc;                           
+                        };
+                        
+                    </script>
+                    <div>
+                        <select name="" id="" class="form-regist">
+                            <option value="showroom 1s">5A Nguyễn Thị Minh Khai, P.Bến Nghé, Q1</option>
+                            <option value="showroom 2s">1052 Nguyễn Văn Linh, P.Tân Phong, Q7</option>
+                        </select>
+                    </div>
+                    <div class="comment">
+                        <textarea  placeholder="Ghi chú" name="" id="" cols="30" rows="10"></textarea>
+                    </div>    
+                </div>
+                <div class="col-xl-12" style="text-align:center;margin-top:30px;">
+                    <a href="#" class="btn-regist">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--fixed element-->
     <div class="social-link">
         <div class="social-icon">
