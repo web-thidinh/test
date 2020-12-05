@@ -159,6 +159,9 @@ function direct_intro(){
     window.location.href = "intro.html";
 };
 function direct(){
+    window.location.href = "main.html";
+};
+function direct_detail(){
     window.location.href = "product-detail.html";
 };
 function direct_news(){
