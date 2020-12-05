@@ -235,10 +235,10 @@
                 <div class="col-xl-6">
                     <p class="head-title" style="margin-bottom:25px;">Lựa chọn dòng xe</p>
                     <div class="list-option">
-                        <button class="list-product-btn" type="button" onclick="dropdown();">
+                        <div class="list-product-btn" type="button" onclick="dropdown();">
                             Chọn xe
                             <i class="fas fa-sort-down"></i>
-                        </button>
+                        </div>
                         <ul class="dropdown-product">
                             <li class="dropdown-product-list" onclick="a();">
                                 <img src="images/regist/grand-i10_RE.png" alt="">
@@ -289,10 +289,10 @@
                         // for(var i = 1;i<= document.querySelectorAll('.dropdown-product-list').length;i++){
                         //     document.getElementsByClassName('.dropdown-product-list:')
                         // }
-                        function a(){
-                            var abc = document.getElementsByClassName('.dropdown-product-list:first-child').innerHTML;                          
-                            document.getElementsByClassName('.list-product-btn').innerHTML = abc;                           
-                        };
+                        $('.dropdown-product-list').click(function(){
+                            $('.list-product-btn').html($(this).html());   
+                            $('.dropdown-product').hide(); 
+                        });
                         
                     </script>
                     <div>

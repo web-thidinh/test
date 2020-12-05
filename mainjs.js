@@ -179,3 +179,8 @@ function direct_buy_product(){
 function direct_contact(){
     window.location.href = "contact.html";
 }
+
+
+$('.header-item ').click(function(){
+    $(this).attr('border-bottom','2px solid #0E528B')
+});

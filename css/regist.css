@@ -49,8 +49,10 @@
     font-weight: bold;
     color:#333;
     outline: none;
-    border:1px solid black;
    background-color: white;
+}
+.list-product-btn img{
+    width:25%;
 }
 .dropdown-product{
     display: none;
@@ -71,7 +73,6 @@
 }
 .dropdown-product-list img{
     width:35%;
-    
 }
 .form-regist{
     height:50px;
