@@ -144,6 +144,8 @@ for(var i = 1;i<6;i++){
 
 }
 
+
+
 function overlay(){   
     document.getElementById('overlayshow').style.display = 'block';  
 };
@@ -152,3 +154,26 @@ function closelayer(){
     document.getElementById('overlayshow').style.display =  "none";
 };
 
+
+
+function direct_intro(){
+    window.location.href = "intro.html";
+};
+function direct(){
+    window.location.href = "product-detail.html";
+};
+function direct_news(){
+    window.location.href = "news.html";
+};
+function direct_service(){
+    window.location.href = "services.html";
+}
+function direct_regist(){
+    window.location.href = "regist.html";
+}
+function direct_buy_product(){
+    window.location.href = "buy-product.html";
+}
+function direct_contact(){
+    window.location.href = "contact.html";
+}
