@@ -220,9 +220,7 @@ a:hover{
     font-weight: bold;
     align-items: center;
 }
-.product-type.active{
-    color:#df6a0e;
-}
+
 .product-img{
     margin-right:15px;
 }

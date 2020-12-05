@@ -141,7 +141,6 @@ for(var i = 1;i<6;i++){
     $('.btn-img-active-3').hide();
     $('.btn-img-active-4').hide();
     $('.btn-img-active-5').hide();
-
 }
 
 
