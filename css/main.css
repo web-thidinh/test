@@ -874,8 +874,11 @@ a:hover{
         outline: none;
         display: block;
     }
-    .header-navbar-mobile{
-     
+    .product-item{
+        text-align: center;
+    }
+    .product-image{
+        width:70%;
     }
     .navbar-show{
         display: block !important;
@@ -957,10 +960,27 @@ a:hover{
     }
 }
 /*Tablet*/
-@media only screen and (min-width:768px) and (max-width:1024px){
+@media only screen and (min-width:767px) and (max-width:1024px){
 
     .footer-item{
         margin-top:20px;
     }
-    
+    .product-type{
+        font-size: 1.8rem;
+        padding-left: 90px;
+    }
+    .product-name{
+        font-size: 1.8rem;
+    }
+    .nav-item .nav-link{
+        font-size: 1.8rem;
+    }
+    .header-phone{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width:321px){
+    .email-title{
+        font-size: 12px;
+    }
 }
