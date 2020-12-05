@@ -127,9 +127,6 @@ a{
     text-decoration:none;
 }
 
-.header-item.active{
-    border-bottom:2px solid #0E528B;
-}
 /* Header dropdown */
 .item-hover:hover .header-dropdown{
     display: block;
