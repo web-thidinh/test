@@ -157,7 +157,7 @@ function closelayer(){
 
 
 function direct_intro(){
-    window.location.href = "https://github.com/web-thidinh/test/intro.html";
+    window.location.href = "intro.html";
 };
 function direct(){
     window.location.href = "product-detail.html";
@@ -175,5 +175,5 @@ function direct_buy_product(){
     window.location.href = "buy-product.html";
 }
 function direct_contact(){
-    window.location.href = "https://web-thidinh.github.io/test/contact.html";
+    window.location.href = "contact.html";
 }
