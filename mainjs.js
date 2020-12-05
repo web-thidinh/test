@@ -175,5 +175,5 @@ function direct_buy_product(){
     window.location.href = "buy-product.html";
 }
 function direct_contact(){
-    window.location.href = "contact.html";
+    window.location.href = "https://web-thidinh.github.io/test/contact.html";
 }
