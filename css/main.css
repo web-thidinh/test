@@ -995,3 +995,14 @@ a:hover{
         width:70%;  
     }
 }
+@media(max-width:768px){
+    .product-type{
+        font-size: 13px;
+    }
+    .product-name{
+        font-size: 13px;
+    }
+    .footer-description{
+        font-size: 13px;
+    }
+}
