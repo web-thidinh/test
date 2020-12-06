@@ -1,6 +1,30 @@
+@font-face{
+    src:url(/fonts/ModernH-Bold.v1.0.ttf);
+    font-family: modernH-Bold;
+}
+@font-face{
+    src:url(/fonts/ModernH-EcoLight.v1.0_0.ttf);
+    font-family: modernH-Ecolight;
+}
+@font-face{
+    src:url(/fonts/ChakraPetch-Medium.ttf);
+    font-family:ChakraPetch-Medium;
+}
+@font-face{
+    src:url(/fonts/ChakraPetch-Regular.ttf);
+    font-family:ChakraPetch-Regular;
+}
 *{
     box-sizing: inherit;
-    font-family: 'Modern H Bold',sans-serif;
+}
+header{
+    font-family:ChakraPetch-Medium ;
+}
+body{
+    font-family: modernH-Bold !important;
+}
+footer{
+    font-family: modernH-Bold ;
 }
 html{
     font-size: 62.5%;/*1rem = 10px*/

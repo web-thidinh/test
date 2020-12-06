@@ -659,8 +659,9 @@ a:hover{
 
 /* Email user */
 .email-user{
+    text-align: center;
     padding:30px 30px;
-    background: url(/test/images/bg-regis.jpg);
+    background: url(/images/bg-regis.jpg);
 }
 .email-user-content{
     margin:auto;
@@ -740,11 +741,10 @@ a:hover{
 .news-title{
     margin:0;
 }
-.news-date{
-
-}
 .footer-info{
+    font-family: modernH-Ecolight;
     display: flex;
+    font-weight: bold;
     margin-left:20px;
 }
 .footer-mark,.footer-contact{
@@ -976,9 +976,21 @@ a:hover{
     .header-phone{
         font-size: 1.8rem;
     }
+    .email-box{
+        font-size: 1.5rem;
+    }
+    .email-input{
+        width:60%;
+    }
 }
 @media (max-width:321px){
-    .email-title{
+    .email-user{
+        padding:30px 10px;
+    }
+    .email-title,.email-input,.email-btn{
         font-size: 12px;
+    }
+    .email-input{
+        width:70%;  
     }
 }
