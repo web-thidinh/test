@@ -731,6 +731,7 @@ a:hover{
 }
 .news-img{
     width:30%;
+    height:100%;
     margin-right: 15px;
 }
 .news-body{
