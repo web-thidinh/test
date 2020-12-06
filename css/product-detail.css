@@ -283,6 +283,7 @@ table th{
 .product-nav-list{
     padding-left: 0;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 5px 0;
 }
@@ -474,12 +475,28 @@ table th{
         font-size: 2.3rem;
     }
 }
-@media (max-width:768px){
+@media (max-width:576px){
+
+    .product-nav{
+        border-top:1px solid #333;
+    }
+    .product-nav-item{
+        padding:0 30px;
+        text-align: center;
+    }
+    .product-brand{
+        display: none;
+    }
+}
+@media (max-width:767px){
     .product-detail{
         width:100%;
     }
     .carousel-item{
         height:auto;
+    }
+    .product-description{
+        text-align: center;
     }
     .product-experience-color{
         padding-top:30px;

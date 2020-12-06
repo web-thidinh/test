@@ -995,7 +995,7 @@ a:hover{
         width:70%;  
     }
 }
-@media(max-width:768px){
+@media(max-width:767px){
     .product-type{
         font-size: 13px;
     }
@@ -1003,6 +1003,9 @@ a:hover{
         font-size: 13px;
     }
     .footer-description{
+        font-size: 13px;
+    }
+    .email-user{
         font-size: 13px;
     }
 }
