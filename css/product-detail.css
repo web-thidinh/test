@@ -475,19 +475,7 @@ table th{
         font-size: 2.3rem;
     }
 }
-@media (max-width:576px){
 
-    .product-nav{
-        border-top:1px solid #333;
-    }
-    .product-nav-item{
-        padding:0 30px;
-        text-align: center;
-    }
-    .product-brand{
-        display: none;
-    }
-}
 @media (max-width:767px){
     .product-detail{
         width:100%;
@@ -519,5 +507,32 @@ table th{
     }
     .image-sub1{
         font-size: 2rem;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .product-nav{
+        border-top:1px solid #333;
+    }
+    .product-nav-item{
+        padding:0 30px;
+        text-align: center;
+    }
+    .product-brand{
+        display: none;
+    }
+    .content-images-item p,.content-body p,.content-bottom-text p{
+        font-size: 14px;
+    }
+    .content-text h2{
+        font-size: 2rem;
+    }
+    .content-text p{
+        font-size: 13px;
+    }
+    .content-body h5{
+        font-size: 20px;
     }
 }

@@ -184,3 +184,5 @@ function direct_contact(){
 $('.header-item ').click(function(){
     $(this).attr('border-bottom','2px solid #0E528B')
 });
+
+$('.nav-link').click()
