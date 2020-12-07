@@ -996,6 +996,11 @@ a:hover{
     }
 }
 @media(max-width:767px){
+    .product-type,.product-name,.footer-description,.email-user{
+        font-size: 16px;
+    }
+}
+@media(max-width:576px){
     .product-type{
         font-size: 13px;
     }

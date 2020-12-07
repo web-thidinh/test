@@ -517,7 +517,7 @@ table th{
         border-top:1px solid #333;
     }
     .product-nav-item{
-        padding:0 30px;
+        padding:0 15px;
         text-align: center;
     }
     .product-brand{
@@ -526,11 +526,14 @@ table th{
     .content-images-item p,.content-body p,.content-bottom-text p{
         font-size: 14px;
     }
+    .image-sub{
+        top:10%;
+    }
     .content-text h2{
         font-size: 2rem;
     }
     .content-text p{
-        font-size: 13px;
+        font-size: 14px;
     }
     .content-body h5{
         font-size: 20px;
